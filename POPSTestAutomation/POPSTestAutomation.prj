@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>katalonEvaluate</name>
+   <name>POPSTestAutomation</name>
    <tag></tag>
    <UUID>48600c4e-fc51-4247-839d-fd175bbf8fd0</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>D:\01.Workplace\12.BitBucket\POPSTestAutomation\POPSTestAutomation\katalonEvaluate.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
