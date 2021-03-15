@@ -7,7 +7,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static org.junit.Assert.doubleIsDifferent
 
+import org.apache.commons.collections4.functors.CatchAndRethrowClosure
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
@@ -39,40 +41,55 @@ public class Mailinator {
 		//WebUI.click(findTestObject('Object Repository/MailinatorPageUI/emailTitle'))
 
 		WebDriver driver = DriverFactory.getWebDriver()
-		WebDriverWait wait = new WebDriverWait(driver,10)
+		WebDriverWait wait = new WebDriverWait(driver, 30, 500)
 		By emailInBox= By.xpath("//table[contains(@class,'table-striped')]/tbody/tr[@ng-repeat='email in emails']/td/a[contains(.,'"+emailTitle+"')]")
 
 		By test = By.xpath("//div[@class='right_col']/div/div[@id='inboxpane']/div/div/div/table[contains(@class,'table-striped')]/tbody/tr[@ng-repeat='email in emails']/td/a[contains(.,'Chào')]")
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(emailInBox))
 		Thread.sleep(3000)
 		WebElement email = driver.findElement(emailInBox)
-				
-		email.click()
-		
-		By IFRAME_EMAILBODY=By.xpath("//iframe")
-		
-		WebElement iframe=driver.findElement(IFIFRAME_EMAILBODY)
-		driver.switchTo().frame(iframe)
-		
-		By EMAIL_CONTENT=By.xpath("//div[@class='mj-container']/div")
-		
-		List<WebElement> listOfDivs = driver.findElements(EMAIL_CONTENT)
-		
-		int code =0
-		for (WebElement div :listOfDivs ) {
-			int numberInText=getCodeInText(listOfDivs.get(div.in))
-		}
-		
-	
-//		WebUI.switchToFrame(findTestObject('Object Repository/MailinatorPageUI/iframe_-- HTML EMAIL BODY --'))
 
-		//List listOfDiv= driver.findAll(ByXPath("//div[@class='mj-container']/div"))
+		email.click()
+
+		By IFRAME_EMAILBODY=By.xpath("//iframe[@id='msg_body']")
+
+		WebElement iframe=driver.findElement(IFRAME_EMAILBODY)
+		driver.switchTo().frame(iframe)
+
+		By EMAIL_CONTENT=By.xpath("//div[@class='mj-container']/div")
+
+		List<WebElement> listOfDivs = driver.findElements(EMAIL_CONTENT)
+
+		String code =""
+		listOfDivs.eachWithIndex { div,index ->
+			String	numberInText=getCodeInText(div.getText())
+			if(numberInText.length()==6)
+				code=numberInText
+		}
+		if(code=="")
+		{
+			try {
+				throw new Exception("No code in email")
+
+			}
+			catch(Exception ex)
+			{
+				ex.printStackTrace()
+			}
+		}
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>Code is "+code)
+		return code;
+
+
+
+
 	}
-	
+
 	def getCodeInText(String text)
 	{
 		String textFilterred = text.replaceAll("\\D", "");
-		if (textFilterred.isEmpty()) return 0;
-		else return Integer.parseInt(textFilterred);
+		if (textFilterred.isEmpty()||textFilterred.length()!=6) return 0;
+		else return textFilterred;
 	}
 }

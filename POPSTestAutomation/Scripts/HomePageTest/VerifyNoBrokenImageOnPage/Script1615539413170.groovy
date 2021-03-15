@@ -14,29 +14,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
 WebUI.openBrowser(GlobalVariable.SourceURL)
 
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('HomePageUI/AvatarOnTopMenu'))
-
-WebUI.click(findTestObject('Settings_DropDownMenu/SignIn_Link'))
-
-WebUI.click(findTestObject('SignInSignUpUI/link_RegisterNewAccount'))
-
-String email = 'KatalonWeb_' + RandomStringUtils.randomNumeric(8)
-
-WebUI.sendKeys(findTestObject('SignUpPageUI/input_Email'), email + '@mailinator.com')
-
-WebUI.sendKeys(findTestObject('SignUpPageUI/input_Password'), '123456')
-
-WebUI.click(findTestObject('SignUpPageUI/button_Register'))
-
-WebUI.click(findTestObject('ActivateAccountPageUI/link_ActivateLater'))
-
-WebUI.verifyElementInViewport(findTestObject('HomePageUI/message_ActivateAccount'), 0)
-
-CustomKeywords.'Mailinator.OpenMailinatorMailboxAndGetCode'(email, 'Chào mừng')
+CustomKeywords.'APIs.anonymousLogin'()
 

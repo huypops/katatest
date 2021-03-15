@@ -9,4 +9,24 @@
       <initValue>'https://pops.vn/'</initValue>
       <name>SourceURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://products.popsww.com'</initValue>
+      <name>APIServer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>USER_Token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>USER_AdultProfileID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>USER_KidsProfileID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
