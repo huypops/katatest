@@ -29,4 +29,19 @@
       <initValue>''</initValue>
       <name>USER_KidsProfileID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'5d2300c2c69d24a09cf5b09b'</initValue>
+      <name>API_KEY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'web'</initValue>
+      <name>PLATFORM</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ky091501'</initValue>
+      <name>EMAIL_TO_RESET_PASSWORD</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
