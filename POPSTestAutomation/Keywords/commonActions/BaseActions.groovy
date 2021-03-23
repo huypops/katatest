@@ -1,22 +1,22 @@
 package commonActions
 
 import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By.ById
 
-import com.fasterxml.aalto.out.ByteWName
 import com.jayway.jsonpath.JsonPath
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.RestRequestObjectBuilder
 import com.kms.katalon.core.testobject.SelectorMethod
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.TestObjectBuilder
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 public class BaseActions {
+	WebDriver driver = DriverFactory.getWebDriver()
+
 
 	@Keyword
 	def ScrollToBottom(int numberOfComponents) {
@@ -132,6 +132,15 @@ public class BaseActions {
 		return null;
 
 	}
+
+
+	public static int getNumberofElements(TestObject object) {
+		WebUI.waitForElementPresent(object, 3);
+		List<WebElement> elements = WebUI.findWebElements(object,10);
+		return elements.size();
+	}
+
+
 }
 
 
