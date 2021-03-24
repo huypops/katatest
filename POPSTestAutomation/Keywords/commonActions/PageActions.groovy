@@ -28,7 +28,8 @@ public class PageActions {
 	@Keyword
 	def verifyLinksOnPage() {
 		def brokenLink = BaseActions.CheckBrokenLink()
-		brokenLink.each { k,v-> println("${k}:${v}")			
+		brokenLink.each { k,v->
+			println("${k}:${v}")
 			Assert.assertTrue(false,"Failed at ${k}:${v}")
 		}
 		WebUI.refresh()
