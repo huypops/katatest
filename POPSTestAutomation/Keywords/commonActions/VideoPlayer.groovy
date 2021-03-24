@@ -24,7 +24,7 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer
 
 
 public class VideoPlayer {
-	
+
 	@Keyword
 	public void videoPlayerCheck(TestObject videoframe, int duration) {
 		ScreenshotDriver.setForceSnapshots(true)
@@ -80,11 +80,11 @@ public class VideoPlayer {
 	}
 
 	@Keyword
-	public Boolean nextVideoByClicking(TestObject object) {
+	public static Boolean nextVideoByClicking(TestObject object) {
 		WebUI.waitForElementPresent(object, 1)
 		String currentvideotext = findTestObject('Object Repository/VideoDetailPageUI/CURRENT_VIDEO_TITLE_TEXT');
 		WebUI.scrollToElement(findTestObject('Object Repository/VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'),0);
-		String nextvideotitle = BaseActions.getTextFirstElement(findTestObject('Object Repository/VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'), 0)	
+		String nextvideotitle = BaseActions.getTextFirstElement(findTestObject('Object Repository/VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'), 0)
 		WebUI.delay(20);
 		WebUI.click(object)
 		BaseActions.clickUsingJS(findTestObject('Object Repository/VideoDetailPageUI/button_next'),30);
