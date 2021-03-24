@@ -28,9 +28,14 @@ public class PageActions {
 	@Keyword
 	def verifyLinksOnPage() {
 		def brokenLink = BaseActions.CheckBrokenLink()
-		brokenLink.each { k,v-> println("${k}:${v}")			
+		brokenLink.each { k,v->
+			println("${k}:${v}")
 			Assert.assertTrue(false,"Failed at ${k}:${v}")
 		}
 		WebUI.refresh()
+	}
+	@Keyword
+	def verifyURLContains(String containsText) {
+		Assert.assertTrue(WebUI.getUrl().contains(containsText),"Expected Url contains "+containsText+"but not.")
 	}
 }
