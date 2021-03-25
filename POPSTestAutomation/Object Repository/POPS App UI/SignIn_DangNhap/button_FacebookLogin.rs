@@ -6,12 +6,12 @@
    <elementGuidId>f3fd3317-1cb9-40ba-96ee-7c7c4ed1ecf0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@type='button']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.social-img.social-img--fb.metro</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[contains(@class,'social-img--fb')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

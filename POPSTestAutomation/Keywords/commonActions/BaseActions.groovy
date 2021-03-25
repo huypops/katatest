@@ -155,7 +155,7 @@ public class BaseActions {
 		return null;
 
 	}
-	
+
 	@Keyword
 	def ClickByJS(TestObject testObject)
 	{
@@ -163,7 +163,7 @@ public class BaseActions {
 		def driver = DriverFactory.getWebDriver()
 		JavascriptExecutor js = (JavascriptExecutor)driver
 		js.executeScript("arguments[0].click()", element)
-		
+
 	}
 }
 

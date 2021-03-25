@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>OpenResetPasswordPage</name>
+   <name>SignInWithFacebook</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b917072e-8684-42eb-bc33-b4a733bb26c2</testCaseGuid>
+   <testCaseGuid>ee73606c-1a14-4710-9603-becbad7d982c</testCaseGuid>
 </TestCaseEntity>
