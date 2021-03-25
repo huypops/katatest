@@ -46,8 +46,7 @@ public class APICMS {
 
 
 
-	public static String AdminLogin()
-	{
+	public static String AdminLogin() {
 		RestAssured.baseURI = CMS_URL;
 		RequestSpecification request = given();
 		JSONObject requestParams = new JSONObject();
@@ -56,9 +55,9 @@ public class APICMS {
 		requestParams.put("applicationID", APPLICATION_ID);
 		request.body(requestParams.toJSONString());
 		Response response = request.header(new Header("Content-Type", "application/json"))
-				.config(RestAssured.config()
-						.encoderConfig(EncoderConfig.encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false)))
-				.post(API_VERSION + API_LOGINWITHACCOUNT);
+		.config(RestAssured.config()
+		.encoderConfig(EncoderConfig.encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false)))
+		.post(API_VERSION + API_LOGINWITHACCOUNT);
 		String responseBody = response.getBody().asString();
 		TOKEN= JsonPath.parse(responseBody).read("$.token");
 	return TOKEN;

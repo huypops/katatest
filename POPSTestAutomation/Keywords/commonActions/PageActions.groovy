@@ -39,12 +39,12 @@ public class PageActions {
 	static def openComicPage() {
 		WebUI.click(findTestObject('TopMenu/menuComics'))
 	}
-	
+
 	static def openMyListPage() {
 		WebUI.click(findTestObject('TopMenu/menuThem'))
 		WebUI.click(findTestObject('MyListPageUI/BUTTON_MY_LIST_INMOREPAGE'))
 	}
-	
+
 
 	static String openSeriesPage(TestObject object) {
 		BaseActions.clickFirstElement(object);
