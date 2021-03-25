@@ -3,17 +3,19 @@ package commonActions
 import org.bouncycastle.cert.crmf.ProofOfPossessionSigningKeyBuilder
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By.ById
 
-import com.fasterxml.aalto.out.ByteWName
+import org.openqa.selenium.WebDriver
+
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
+
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.jayway.jsonpath.JsonPath
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RestRequestObjectBuilder
 import com.kms.katalon.core.testobject.SelectorMethod
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.TestObjectBuilder
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -21,9 +23,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import groovy.json.StringEscapeUtils
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 public class BaseActions {
+	WebDriver driver = DriverFactory.getWebDriver()
+
 
 	@Keyword
 	def ScrollToBottom(int numberOfComponents) {
@@ -165,6 +168,51 @@ public class BaseActions {
 		js.executeScript("arguments[0].click()", element)
 
 	}
+
+
+
+	public static int getNumberofElements(TestObject object) {
+		WebUI.waitForElementPresent(object, 3);
+		List<WebElement> elements = WebUI.findWebElements(object,3);
+		return elements.size();
+	}
+
+	public static String getTextFirstElement(TestObject object, int i) {
+		return WebUI.findWebElements(object,10).get(i).getText();
+	}
+	@Keyword
+	public static void clickFirstElement(TestObject object, int i) {
+		WebUI.findWebElements(object,10).get(i).click();
+	}
+
+	public void mouseHoverJS(By locator) {
+		WebElement section = driver.findElement(locator);
+		Actions action = new Actions(driver);
+		action.moveToElement(section).build().perform();
+	}
+
+	public void mouseHoverJS(By locator, By nexbuttonlocator) {
+		Actions actions = new Actions(driver);
+		WebElement element = driver.findElement(locator);
+		WebElement element1 = driver.findElement(nexbuttonlocator);
+		actions.moveToElement(element).click(element1).build().perform();
+	}
+	public void ClickByJS(By locator) {
+		WebElement element = driver.findElement(locator);
+		new Actions(driver).click(element).build().perform();
+	}
+
+
+	@Keyword
+	def static clickUsingJS(TestObject object, int timeout)
+	{
+		WebElement element = WebUiCommonHelper.findWebElement(object,timeout);
+		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));
+	}
+
+
+
+
 }
 
 

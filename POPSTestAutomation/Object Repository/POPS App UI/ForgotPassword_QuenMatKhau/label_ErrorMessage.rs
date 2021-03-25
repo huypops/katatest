@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ToastMessage_Error</name>
+   <name>label_ErrorMessage</name>
    <tag></tag>
-   <elementGuidId>dceda628-8327-4073-bd5e-8cbfe1e0ed12</elementGuidId>
+   <elementGuidId>2c47ad35-91af-46c6-bd0c-c20a25806b98</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#lto124irb6</value>
+         <value>p.e-form-item__error</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='Toastify__toast Toastify__toast--error']</value>
+         <value>//div[@id='__next']/main/div/div/div/form/div/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,76 +21,76 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>lto124irb6</value>
+      <value>p</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>Toastify__toast Toastify__toast--success</value>
+      <value>e-form-item__error</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Một email đã được gửi đến tài khoản email của bạn! Vui lòng kiểm tra email</value>
+      <value>Nhập thông tin ở đây</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;lto124irb6&quot;)</value>
+      <value>id(&quot;__next&quot;)/main[@class=&quot;dark lang-undefined&quot;]/div[@class=&quot;main-wrapper main-wrapper--no-padding&quot;]/div[@class=&quot;blank-wrapper&quot;]/div[@class=&quot;account-modal&quot;]/form[@class=&quot;e-form account-modal__form&quot;]/div[@class=&quot;e-form-item account-modal__input-row&quot;]/p[@class=&quot;e-form-item__error&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//div[@id='lto124irb6']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='__next']/div[3]/div/div</value>
+      <value>//div[@id='__next']/main/div/div/div/form/div/p</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hoàn thành'])[1]/following::div[5]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quên mật khẩu'])[1]/following::p[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gửi lại email kích hoạt'])[1]/following::div[12]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='home'])[1]/following::p[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lock children'])[1]/preceding::div[4]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Gửi'])[1]/preceding::p[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lock children'])[1]/preceding::p[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nhập thông tin ở đây']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div</value>
+      <value>//form/div/p</value>
    </webElementXpaths>
 </WebElementEntity>

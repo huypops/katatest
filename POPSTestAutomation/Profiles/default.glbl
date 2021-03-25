@@ -74,4 +74,14 @@
       <initValue>'Aimabiet?123'</initValue>
       <name>LOGIN_FACEBOOK_PASSWORD</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'huulong445566@gmail.com'</initValue>
+      <name>LOGIN_GOOGLE_EMAIL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345678x@X'</initValue>
+      <name>LOGIN_GOOGLE_PASSWORD</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

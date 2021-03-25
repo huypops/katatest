@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VerifyCannotEnterEmailWithWrongFormat</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a81d9db7-6bde-41bc-96be-6ac43c769540</testCaseGuid>
+</TestCaseEntity>

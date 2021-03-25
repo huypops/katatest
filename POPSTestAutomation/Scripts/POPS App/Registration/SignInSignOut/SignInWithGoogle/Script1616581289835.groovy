@@ -21,17 +21,20 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('POPS App UI/TopMenu/button_DangNhap'))
 
-WebUI.click(findTestObject('POPS App UI/SignIn_DangNhap/button_FacebookLogin'))
+WebUI.click(findTestObject('POPS App UI/SignIn_DangNhap/button_GoogleLogin'))
 
 parentWindow = WebUI.getWindowIndex()
 
-WebUI.switchToWindowTitle('Facebook')
+WebUI.switchToWindowIndex(1)
 
-WebUI.setText(findTestObject('POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/input_Email'), GlobalVariable.LOGIN_FACEBOOK_EMAIL)
+'Google Account for testing must be created with a new phone number - which has not associated with any account before.'
+WebUI.setText(findTestObject('POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/input_GoogleEmail'), GlobalVariable.LOGIN_GOOGLE_EMAIL)
 
-WebUI.setText(findTestObject('POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/input_Password'), GlobalVariable.LOGIN_FACEBOOK_PASSWORD)
+WebUI.click(findTestObject('POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/button_Next'))
 
-WebUI.click(findTestObject('POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/button_Login'))
+WebUI.setText(findTestObject('POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/input_GooglePassword'), GlobalVariable.LOGIN_GOOGLE_PASSWORD)
+
+WebUI.click(findTestObject('POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/button_Final'))
 
 WebUI.switchToWindowIndex(parentWindow)
 
@@ -39,6 +42,6 @@ WebUI.click(findTestObject('POPS App UI/TopMenu/Settings_DropDownMenuUI/icon_Acc
 
 WebUI.click(findTestObject('POPS App UI/TopMenu/Settings_DropDownMenuUI/button_EditAccount'))
 
-WebUI.verifyElementAttributeValue(findTestObject('POPS App UI/SettingsPageUI/Account General/input_Email'), 'value', GlobalVariable.LOGIN_FACEBOOK_EMAIL, 
+WebUI.verifyElementAttributeValue(findTestObject('POPS App UI/SettingsPageUI/Account General/input_Email'), 'value', GlobalVariable.LOGIN_GOOGLE_EMAIL, 
     0)
 
