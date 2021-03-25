@@ -16,6 +16,9 @@ public class APIs {
 	String ANONYMOUS_LOGIN='/api/v5/auths/anonymousLoginV2a'
 	static String API_URL="https://products.popsww.com";
 	static String apiversion = "/api/v5";
+	static String API_USER_LOGIN="/auths/login";
+	static String PLATFORM = "web";
+	static final String API_COMIC_DETAIL="/comictitles/comicDetail";
 
 
 
@@ -71,7 +74,6 @@ public class APIs {
 
 	public static String getSearchSuggest() {
 		String searchSuggestion = "/Searches/suggestions";
-		println("xxxxxxx " + API_URL + apiversion + searchSuggestion+"?profileID="+GlobalVariable.USER_AdultProfileID)
 		def builder =new RestRequestObjectBuilder()
 		def requestObject = builder
 				.withRestRequestMethod("GET")
@@ -98,11 +100,61 @@ public class APIs {
 		System.out.println("nnnnnnnnnnnnnn" + listcomictitle);
 		return listcomictitle;
 	}
-	//	@Keyword
-	//	public static List<String> getTokenAuThen(){
-	//		String token = JsonPath.parse(ResponseBody).read('data.userInfo.id')
-	//		List<String> listvideotitle = JsonPath.parse(getSearchSuggest()).read('$..[?(@.type==\'video\')].contents..text');
-	//		System.out.println("nnnnnnnnnnnnnn" + listvideotitle);
-	//		return listvideotitle;
-	//	}
+
+	
+	@Keyword
+	public static String loginAsUser()
+	{
+		def builder =new RestRequestObjectBuilder()
+		def requestObject = builder
+				.withRestRequestMethod("POST")
+				.withRestUrl(API_URL + apiversion + API_USER_LOGIN)
+				.withHttpHeaders([
+					new TestObjectProperty("Content-Type",ConditionType.EQUALS,"application/json"),
+					new TestObjectProperty("api-key",ConditionType.EQUALS,API_KEY)
+				])
+				.withTextBodyContent('{"account": "'+GlobalVariable.USERNAME+'","password": "'+GlobalVariable.PASSWORD+'"}')
+				.build()
+		def response = WS.sendRequest(requestObject)
+		String responseBody = response.getResponseText()
+		return responseBody;
+		
+	}
+	@Keyword
+	public static String getUserToken() {
+		String token = JsonPath.parse(loginAsUser()).read('.data.id')
+		return token.replace("[\"", "").replace("\"]", "")
+	}
+	@Keyword
+	public static String getProfileID() {
+		String adultProfileID= JsonPath.parse(loginAsUser()).read('$.data.profiles.[?(@.type==\'adult\')].id')
+		return adultProfileID.replace("[\"", "").replace("\"]", "")
+	}
+	@Keyword
+	public static List<String> checkComicHasUnlockChapter(String comidid){
+		def builder =new RestRequestObjectBuilder()
+		def requestObject = builder
+				.withRestRequestMethod("POST")
+				.withRestUrl(API_URL + apiversion + API_COMIC_DETAIL+"?profileID="+getProfileID())
+				.withHttpHeaders([
+					new TestObjectProperty("Content-Type",ConditionType.EQUALS,"application/json"),
+					new TestObjectProperty("api-key",ConditionType.EQUALS,API_KEY),
+					new TestObjectProperty("Authorization",ConditionType.EQUALS,getUserToken()),
+					new TestObjectProperty("platform",ConditionType.EQUALS,PLATFORM),
+					new TestObjectProperty("x-country",ConditionType.EQUALS,"vn")
+				])
+				.withTextBodyContent('{"id": "'+comidid+'"}')
+//				.withTextBodyContent('{"id": "5edf1138e3d0a70034a66435"}')
+				.build()
+		def response = WS.sendRequest(requestObject)
+		String responseBody = response.getResponseText()
+		
+		List<String> list = JsonPath.parse(responseBody).read('$.chapters.[?(@.isUnlocked==false&&@.isFree==false)]._id');
+		println("llllllllll   " +list)
+		return list;
+		
+	}
+	
+	
+	
 }

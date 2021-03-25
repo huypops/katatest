@@ -59,4 +59,14 @@
       <initValue>30</initValue>
       <name>LONG_TIMEOUT</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'huy.thanh@pops.vn'</initValue>
+      <name>USERNAME</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345678'</initValue>
+      <name>PASSWORD</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

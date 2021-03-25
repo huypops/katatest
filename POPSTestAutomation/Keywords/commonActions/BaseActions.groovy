@@ -158,7 +158,7 @@ public class BaseActions {
 
 	}
 
-	
+
 	@Keyword
 	def ClickByJS(TestObject testObject)
 	{
@@ -166,7 +166,7 @@ public class BaseActions {
 		def driver = DriverFactory.getWebDriver()
 		JavascriptExecutor js = (JavascriptExecutor)driver
 		js.executeScript("arguments[0].click()", element)
-		
+
 	}
 
 
@@ -180,7 +180,7 @@ public class BaseActions {
 	public static String getTextFirstElement(TestObject object, int i) {
 		return WebUI.findWebElements(object,2).get(i).getText();
 	}
-	
+
 	public static String getAttributeFirstElement(TestObject object, String attribute) {
 		return WebUI.findWebElements(object,2).get(0).getAttribute(attribute);
 	}
