@@ -3,10 +3,7 @@ package commonActions
 import org.bouncycastle.cert.crmf.ProofOfPossessionSigningKeyBuilder
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
-<<<<<<< HEAD
-=======
 import org.openqa.selenium.WebDriver
->>>>>>> mydev
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 
@@ -23,11 +20,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import groovy.json.StringEscapeUtils
-
-<<<<<<< HEAD
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-=======
->>>>>>> mydev
+
 
 public class BaseActions {
 	WebDriver driver = DriverFactory.getWebDriver()
@@ -163,7 +157,7 @@ public class BaseActions {
 		return null;
 
 	}
-<<<<<<< HEAD
+
 	
 	@Keyword
 	def ClickByJS(TestObject testObject)
@@ -174,7 +168,7 @@ public class BaseActions {
 		js.executeScript("arguments[0].click()", element)
 		
 	}
-=======
+
 
 
 	public static int getNumberofElements(TestObject object) {
@@ -225,8 +219,6 @@ public class BaseActions {
 
 
 
-
->>>>>>> mydev
 }
 
 

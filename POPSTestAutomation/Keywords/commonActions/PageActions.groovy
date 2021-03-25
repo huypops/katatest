@@ -34,11 +34,11 @@ public class PageActions {
 		}
 		WebUI.refresh()
 	}
-<<<<<<< HEAD
+
 	@Keyword
 	def verifyURLContains(String containsText) {
 		Assert.assertTrue(WebUI.getUrl().contains(containsText),"Expected Url contains "+containsText+"but not.")
-=======
+	}
 
 	@Keyword
 	static def openComicPage() {
@@ -63,6 +63,6 @@ public class PageActions {
 		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
->>>>>>> mydev
+
 	}
 }
