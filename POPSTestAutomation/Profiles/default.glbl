@@ -44,4 +44,19 @@
       <initValue>'ky091501'</initValue>
       <name>EMAIL_TO_RESET_PASSWORD</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://cms-aio.pops.vn'</initValue>
+      <name>CMS_API</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>SHORT_TIMEOUT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>LONG_TIMEOUT</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

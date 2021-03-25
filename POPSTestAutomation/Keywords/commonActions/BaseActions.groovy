@@ -1,20 +1,27 @@
 package commonActions
 
+import org.bouncycastle.cert.crmf.ProofOfPossessionSigningKeyBuilder
 import org.openqa.selenium.By
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By.ById
 
 import com.fasterxml.aalto.out.ByteWName
 import com.jayway.jsonpath.JsonPath
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.RestRequestObjectBuilder
 import com.kms.katalon.core.testobject.SelectorMethod
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.TestObjectBuilder
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import groovy.json.StringEscapeUtils
+
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 public class BaseActions {
 
@@ -24,6 +31,22 @@ public class BaseActions {
 		int times = Math.ceil((Double)numberOfComponents/5)
 		System.out.println("time is ===="+ times)
 	}
+
+	/*Scroll down until page load complete by checking if POPS Logo in Footer visible in viewport
+	 * */
+	@Keyword
+	def ScrollToFooter() {
+
+		TestObject POPS_Logo_Footer=	findTestObject('POPS App UI/Footer/POPS_Logo_In_Footer')
+		Boolean isDisplayed = false
+		while (isDisplayed== false) {
+			ScrollByHeight()
+			WebUI.delay(2)
+			isDisplayed=WebUI.verifyElementInViewport(POPS_Logo_Footer, 1, FailureHandling.OPTIONAL)
+		}
+		String a =""
+	}
+
 	@Keyword
 	def ScrollToEndOfPage(String pageCode, String slug, String limit,String profileID) {
 		//def response = CustomKeywords.'commonActions.APIs.getPageComponents'(pageCode, slug, limit, profileID)
@@ -131,6 +154,16 @@ public class BaseActions {
 		}
 		return null;
 
+	}
+	
+	@Keyword
+	def ClickByJS(TestObject testObject)
+	{
+		WebElement element = WebUiCommonHelper.findWebElement(testObject, 5)
+		def driver = DriverFactory.getWebDriver()
+		JavascriptExecutor js = (JavascriptExecutor)driver
+		js.executeScript("arguments[0].click()", element)
+		
 	}
 }
 

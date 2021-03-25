@@ -34,4 +34,8 @@ public class PageActions {
 		}
 		WebUI.refresh()
 	}
+	@Keyword
+	def verifyURLContains(String containsText) {
+		Assert.assertTrue(WebUI.getUrl().contains(containsText),"Expected Url contains "+containsText+"but not.")
+	}
 }
