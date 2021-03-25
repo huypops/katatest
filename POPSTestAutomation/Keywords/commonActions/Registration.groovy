@@ -1,4 +1,4 @@
-package pops.comonactions
+package commonActions;
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
@@ -43,24 +43,23 @@ class Registration {
 		return MobileDriverFactory.getDriver();
 	}
 	public String getGetCurrentDateTime() {
-			Date today = new Date()
-			String todaysDate = today.format('yymmddhhmmss')
-			return todaysDate;
+		Date today = new Date()
+		String todaysDate = today.format('yymmddhhmmss')
+		return todaysDate;
 	}
-	
+
 	@Keyword
 	public void registrationByValidEmail() {
 		Mobile.waitForElementPresent(findTestObject('REGISTRATION/SPLASHPAGE_SIGNUP_BUTTON'), 0);
-		
+
 		Mobile.tap(findTestObject('REGISTRATION/SPLASHPAGE_SIGNUP_BUTTON'), 0);
-		
+
 		Mobile.setText(findTestObject('REGISTRATION/SIGNUPPAGE_EMAIL_TXTBOX'), 'mail'+getGetCurrentDateTime()+'@mailinator.com', 0);
-		
+
 		Mobile.setText(findTestObject('REGISTRATION/SIGNUPPAGE_PASSWORD_TXTBOX'), '123456', 0);
-		
+
 		Mobile.tap(findTestObject('REGISTRATION/SIGNUPPAGE_REGISTER_BUTTON'), 0);
-		
+
 		Mobile.tap(findTestObject('REGISTRATION/ACTIVATIONPAGE_CONFIRM_POPUP'), 0);
 	}
-	
 }
