@@ -34,22 +34,29 @@ public class PageActions {
 		}
 		WebUI.refresh()
 	}
-	
+
+	@Keyword
 	static def openComicPage() {
 		WebUI.click(findTestObject('TopMenu/menuComics'))
 	}
 	
-	static def openSeriesPage() {
-		BaseActions.clickFirstElement(findTestObject('Object Repository/SeriesDetailPageUI/SERIES_LIST_ITEMS'), 0)
-		return WebUI.getAttribute(findTestObject('Object Repository/SeriesDetailPageUI/SERIES_LIST_ITEMS'), 'title');
+	static def openMyListPage() {
+		WebUI.click(findTestObject('TopMenu/menuThem'))
+		WebUI.click(findTestObject('MyListPageUI/BUTTON_MY_LIST_INMOREPAGE'))
 	}
 	
+
+	static String openSeriesPage(TestObject object) {
+		BaseActions.clickFirstElement(object);
+		return BaseActions.getAttributeFirstElement(object, 'title');
+	}
+
 	@Keyword
 	static def openVideoPage() {
 		WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
 		SearchActions.searchAnyVideo(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), 'conan')
 		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 0);
+		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
 	}
 }

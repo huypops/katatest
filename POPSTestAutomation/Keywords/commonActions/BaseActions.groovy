@@ -147,12 +147,20 @@ public class BaseActions {
 	}
 
 	public static String getTextFirstElement(TestObject object, int i) {
-		return WebUI.findWebElements(object,10).get(i).getText();
+		return WebUI.findWebElements(object,2).get(i).getText();
+	}
+	
+	public static String getAttributeFirstElement(TestObject object, String attribute) {
+		return WebUI.findWebElements(object,2).get(0).getAttribute(attribute);
 	}
 	@Keyword
 	public static void clickFirstElement(TestObject object, int i) {
 		WebUI.findWebElements(object,10).get(i).click();
 	}
+	public static void clickFirstElement(TestObject object) {
+		WebUI.findWebElements(object,10).get(0).click();
+	}
+
 
 	public void mouseHoverJS(By locator) {
 		WebElement section = driver.findElement(locator);
@@ -170,15 +178,14 @@ public class BaseActions {
 		WebElement element = driver.findElement(locator);
 		new Actions(driver).click(element).build().perform();
 	}
-	
-	
+
 	@Keyword
 	def static clickUsingJS(TestObject object, int timeout)
 	{
 		WebElement element = WebUiCommonHelper.findWebElement(object,timeout);
 		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));
 	}
-	
+
 
 
 
