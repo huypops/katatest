@@ -66,7 +66,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-<<<<<<< HEAD
       <initValue>'mixixma@gmail.com'</initValue>
       <name>LOGIN_FACEBOOK_EMAIL</name>
    </GlobalVariableEntity>
@@ -82,9 +81,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'12345678x@X'</initValue>
-      <name>LOGIN_GOOGLE_PASSWORD</name>
-=======
       <initValue>'huy.thanh@pops.vn'</initValue>
       <name>USERNAME</name>
    </GlobalVariableEntity>
@@ -92,6 +88,5 @@
       <description></description>
       <initValue>'12345678'</initValue>
       <name>PASSWORD</name>
->>>>>>> master
    </GlobalVariableEntity>
 </GlobalVariableEntities>
