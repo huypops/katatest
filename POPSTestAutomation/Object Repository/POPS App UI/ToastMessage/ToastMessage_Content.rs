@@ -6,12 +6,12 @@
    <elementGuidId>bd8a64e8-0cd7-47a3-b47b-b88b20569d23</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='Toastify__toast Toastify__toast--success']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#lto124irb6</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='Toastify__toast-body']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

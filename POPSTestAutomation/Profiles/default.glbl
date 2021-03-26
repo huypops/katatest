@@ -46,6 +46,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'ky032401'</initValue>
+      <name>EMAIL_TO_RESET_PASSWORD_BY_BUTTON</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'https://cms-aio.pops.vn'</initValue>
       <name>CMS_API</name>
    </GlobalVariableEntity>
@@ -58,6 +63,21 @@
       <description></description>
       <initValue>30</initValue>
       <name>LONG_TIMEOUT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'mixixma@gmail.com'</initValue>
+      <name>LOGIN_FACEBOOK_EMAIL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Aimabiet?123'</initValue>
+      <name>LOGIN_FACEBOOK_PASSWORD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'huulong445566@gmail.com'</initValue>
+      <name>LOGIN_GOOGLE_EMAIL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

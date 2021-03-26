@@ -32,12 +32,43 @@ import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
+import io.appium.java_client.functions.ExpectedCondition
 import net.sf.jasperreports.engine.data.ListOfArrayDataSource
 
 public class Mailinator {
 
 	@Keyword
 	def OpenMailinatorMailboxAndGetCode(String mailBox, String emailTitle) {
+
+		OpenMailinatorMail(mailBox, emailTitle)
+
+		By EMAIL_CONTENT=By.xpath("//div[@class='mj-container']/div")
+
+		List<WebElement> listOfDivs = driver.findElements(EMAIL_CONTENT)
+
+		String code =""
+		listOfDivs.eachWithIndex { div,index ->
+			String	numberInText=getCodeInText(div.getText())
+			if(numberInText.length()==6)
+				code=numberInText
+		}
+		if(code=="") {
+			try {
+				throw new Exception("No code in email")
+			}
+			catch(Exception ex) {
+				ex.printStackTrace()
+			}
+		}
+
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>Code is "+code)
+		return code;
+	}
+
+	@Keyword
+	def OpenMailinatorMail(String mailBox, String emailTitle) {
+
+		WebUI.delay(5)
 		WebUI.navigateToUrl("https://www.mailinator.com/v3/index.jsp?zone=public&query="+mailBox+"#/#inboxpane")
 		//WebUI.click(findTestObject('Object Repository/MailinatorPageUI/emailTitle'))
 
@@ -54,41 +85,13 @@ public class Mailinator {
 
 		By IFRAME_EMAILBODY=By.xpath("//iframe[@id='msg_body']")
 
+
 		WebElement iframe=driver.findElement(IFRAME_EMAILBODY)
 		driver.switchTo().frame(iframe)
-
-		By EMAIL_CONTENT=By.xpath("//div[@class='mj-container']/div")
-
-		List<WebElement> listOfDivs = driver.findElements(EMAIL_CONTENT)
-
-		String code =""
-		listOfDivs.eachWithIndex { div,index ->
-			String	numberInText=getCodeInText(div.getText())
-			if(numberInText.length()==6)
-				code=numberInText
-		}
-		if(code=="")
-		{
-			try {
-				throw new Exception("No code in email")
-
-			}
-			catch(Exception ex)
-			{
-				ex.printStackTrace()
-			}
-		}
-
-		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>Code is "+code)
-		return code;
-
-
-
-
 	}
 
-	def getCodeInText(String text)
-	{
+
+	def getCodeInText(String text) {
 		String textFilterred = text.replaceAll("\\D", "");
 		if (textFilterred.isEmpty()||textFilterred.length()!=6) return 0;
 		else return textFilterred;
