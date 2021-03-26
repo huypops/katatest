@@ -55,7 +55,7 @@ public class PageActions {
 		try {
 			WebUI.waitForElementPresent(object, 5)
 			String name  = BaseActions.getAttributeFirstElement(object, 'title');
-			BaseActions.clickFirstElement(object,0);	
+			BaseActions.clickFirstElement(object,0);
 			return	name;
 		}catch(NoSuchElementException ignored) {
 			println("Not found Series List  : " + ignored)

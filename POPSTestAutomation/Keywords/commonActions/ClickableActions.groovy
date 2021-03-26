@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import groovy.json.StringEscapeUtils
@@ -30,7 +31,7 @@ public class ClickableActions {
 
 	@Keyword
 	public void  addToMyList() {
-		WebElement element = WebUI.findWebElement(findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST'),0);
+		WebElement element = WebUiCommonHelper.findWebElement((findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST')),0)
 		if (element != null) {
 			BaseActions.ClickByJS(findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST'),2);
 			String text  = WebUI.getText(findTestObject('Object Repository/MyListPageUI/TEXT_SAVED_VIDEO'));
