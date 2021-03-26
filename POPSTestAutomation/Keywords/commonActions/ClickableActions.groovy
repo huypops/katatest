@@ -14,17 +14,17 @@ import groovy.json.StringEscapeUtils
 
 public class ClickableActions {
 
-	
+
 	@Keyword
 	public boolean clickingOnGenre(TestObject object){
-		String seriesname=PageActions.openSeriesPage(findTestObject('SeriesDetailPageUI/SERIES_LIST_ITEMS'));
+		PageActions.openSeriesPage(findTestObject('SeriesDetailPageUI/SERIES_LIST_ITEMS'));
 		String genrename = BaseActions.getTextFirstElement(object, 0).trim();
 		BaseActions.clickFirstElement(object, 0)
 		Assert.assertEquals(genrename, getGenreTitlePage())
 	}
 
 	public String getGenreTitlePage(){
-		String title = WebUI.getText(findTestObject('Object Repository/SeriesDetailPageUI/GENRE_HEADER_TITLE'));
+		String title = WebUI.getText(findTestObject('SeriesDetailPageUI/GENRE_HEADER_TITLE'));
 		return title.trim();
 	}
 
@@ -32,7 +32,7 @@ public class ClickableActions {
 	public void  addToMyList() {
 		WebElement element = WebUI.findWebElement(findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST'),0);
 		if (element != null) {
-			BaseActions.clickUsingJS(findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST'),2);
+			BaseActions.ClickByJS(findTestObject('Object Repository/MyListPageUI/ADD_TO_LIST'),2);
 			String text  = WebUI.getText(findTestObject('Object Repository/MyListPageUI/TEXT_SAVED_VIDEO'));
 			Assert.assertTrue(text.trim().contains("Đã"));
 		}

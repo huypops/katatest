@@ -52,7 +52,7 @@ public class SearchActions {
 		}
 		return false;
 	}
-	
+
 	@Keyword
 	public static boolean searchAnyComic(TestObject object, String comicname){
 		WebUI.waitForElementPresent(object, 0);

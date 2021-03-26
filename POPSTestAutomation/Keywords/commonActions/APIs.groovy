@@ -101,24 +101,19 @@ public class APIs {
 		return listcomictitle;
 	}
 
-	
+
 	@Keyword
-	public static String loginAsUser()
-	{
+	public static String loginAsUser() {
 		def builder =new RestRequestObjectBuilder()
 		def requestObject = builder
 				.withRestRequestMethod("POST")
 				.withRestUrl(API_URL + apiversion + API_USER_LOGIN)
-				.withHttpHeaders([
-					new TestObjectProperty("Content-Type",ConditionType.EQUALS,"application/json"),
-					new TestObjectProperty("api-key",ConditionType.EQUALS,API_KEY)
-				])
+				.withHttpHeaders([new TestObjectProperty("Content-Type",ConditionType.EQUALS,"application/json"), new TestObjectProperty("api-key",ConditionType.EQUALS,API_KEY)])
 				.withTextBodyContent('{"account": "'+GlobalVariable.USERNAME+'","password": "'+GlobalVariable.PASSWORD+'"}')
 				.build()
 		def response = WS.sendRequest(requestObject)
 		String responseBody = response.getResponseText()
 		return responseBody;
-		
 	}
 	@Keyword
 	public static String getUserToken() {
@@ -144,17 +139,14 @@ public class APIs {
 					new TestObjectProperty("x-country",ConditionType.EQUALS,"vn")
 				])
 				.withTextBodyContent('{"id": "'+comidid+'"}')
-//				.withTextBodyContent('{"id": "5edf1138e3d0a70034a66435"}')
+				//				.withTextBodyContent('{"id": "5edf1138e3d0a70034a66435"}')
 				.build()
 		def response = WS.sendRequest(requestObject)
 		String responseBody = response.getResponseText()
-		
+
 		List<String> list = JsonPath.parse(responseBody).read('$.chapters.[?(@.isUnlocked==false&&@.isFree==false)]._id');
 		println("llllllllll   " +list)
 		return list;
-		
+
 	}
-	
-	
-	
 }

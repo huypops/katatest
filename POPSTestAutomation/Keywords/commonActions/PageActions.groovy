@@ -19,6 +19,7 @@ import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
@@ -42,18 +43,26 @@ public class PageActions {
 
 	@Keyword
 	static def openComicPage() {
-		WebUI.click(findTestObject('TopMenu/menuComics'))
+		WebUI.click(findTestObject('POPS App UI/TopMenu/menu_2_Comics'))
 	}
 
 	static def openMyListPage() {
-		WebUI.click(findTestObject('TopMenu/menuThem'))
+		WebUI.click(findTestObject('POPS App UI/TopMenu/menu_5_Them'))
 		WebUI.click(findTestObject('MyListPageUI/BUTTON_MY_LIST_INMOREPAGE'))
 	}
 
-
 	static String openSeriesPage(TestObject object) {
-		BaseActions.clickFirstElement(object);
-		return BaseActions.getAttributeFirstElement(object, 'title');
+		try {
+			WebUI.waitForElementPresent(object, 5)
+			String name  = BaseActions.getAttributeFirstElement(object, 'title');
+			BaseActions.clickFirstElement(object,0);	
+			return	name;
+		}catch(NoSuchElementException ignored) {
+			println("Not found Series List  : " + ignored)
+		}
+
+
+		
 	}
 
 	@Keyword
@@ -63,6 +72,14 @@ public class PageActions {
 		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
+	}
 
+	@Keyword
+	public static def checkBrokenImages(TestObject object) {
+		WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
+		SearchActions.searchAnyVideo(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), 'conan')
+		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
+		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
+		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
 	}
 }

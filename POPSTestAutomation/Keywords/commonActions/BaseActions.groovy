@@ -182,6 +182,7 @@ public class BaseActions {
 	}
 
 	public static String getAttributeFirstElement(TestObject object, String attribute) {
+		println("get Title : " + WebUI.findWebElements(object,2).get(0).getAttribute(attribute))
 		return WebUI.findWebElements(object,2).get(0).getAttribute(attribute);
 	}
 	@Keyword
@@ -211,7 +212,7 @@ public class BaseActions {
 	}
 
 	@Keyword
-	def static clickUsingJS(TestObject object, int timeout)
+	def static ClickByJS(TestObject object, int timeout)
 	{
 		WebElement element = WebUiCommonHelper.findWebElement(object,timeout);
 		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));

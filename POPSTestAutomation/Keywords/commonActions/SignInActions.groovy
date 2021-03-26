@@ -23,12 +23,9 @@ import internal.GlobalVariable
 public class SignInActions {
 	@Keyword
 	public static void SignInWithValidAccount(String email, String password) {
-		WebUI.click(findTestObject('POPS App UI/TopMenu/button_DangNhap'))		
+		WebUI.click(findTestObject('POPS App UI/TopMenu/button_DangNhap'))
 		WebUI.callTestCase(findTestCase('POPS App/CommonTestCases/SignInWithAccount'), [('Email') : ''+email+'', ('Password') : ''+password+''],
-			FailureHandling.STOP_ON_FAILURE)	
-		WebUI.verifyElementNotPresent(findTestObject('POPS App UI/TopMenu/button_DangNhap'), 3)			
+		FailureHandling.STOP_ON_FAILURE)
+		WebUI.verifyElementNotPresent(findTestObject('POPS App UI/TopMenu/button_DangNhap'), 3)
 	}
-	
-	
-	
 }

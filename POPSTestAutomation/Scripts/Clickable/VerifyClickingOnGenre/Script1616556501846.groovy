@@ -17,7 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.SourceURL)
 
+WebUI.maximizeWindow()
 
-WebUI.maximizeWindow();
 CustomKeywords.'commonActions.ClickableActions.clickingOnGenre'(findTestObject('Object Repository/VideoDetailPageUI/TEXT_LINK_GENER'))
+
+WebUI.closeBrowser()
 
