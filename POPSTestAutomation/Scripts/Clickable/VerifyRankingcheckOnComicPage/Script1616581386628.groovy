@@ -17,7 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.SourceURL)
 
+WebUI.maximizeWindow()
+
 CustomKeywords.'commonActions.PageActions.openComicPage'()
 
-WebUI.scrollToElement(findTestObject('ComicPageUI/COMIC_RANKING_SECTION'), 0)
+CustomKeywords.'commonActions.BaseActions.ScrollToFooter'()
+
+CustomKeywords.'commonActions.Comics.CheckComicRankingDisplay20Items'(findTestObject('ComicPageUI/COMIC_RANKING_SECTION'))
 
