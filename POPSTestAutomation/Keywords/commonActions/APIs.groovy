@@ -47,7 +47,6 @@ public class APIs {
 
 	@Keyword
 	def anonymousLogin() {
-
 		def responseData = WS.sendRequest(findTestObject('01_APIs/AnonymousLogin'))
 		System.out.println("==================Response========================")
 		System.out.println(responseData.getResponseText())
@@ -148,5 +147,54 @@ public class APIs {
 		println("llllllllll   " +list)
 		return list;
 
+	}
+
+	@Keyword
+	public static List<String> getRecommandationText() {
+		List<String> recommandationtext = JsonPath.parse(APIs.getPageComponents("home", "home", "100",GlobalVariable.USER_AdultProfileID)).read('$.data.[?(@.code==\'playlist_recommendation\')].title');
+		return recommandationtext;
+	}
+
+	@Keyword
+	public static List<String> getRecommandationList() {
+		List<String> listcomictitle = JsonPath.parse(APIs.getPageComponents("home", "home", "100",GlobalVariable.USER_AdultProfileID)).read('$.data.[?(@.code==\'playlist_recommendation\')].title');
+		return listcomictitle;
+	}
+
+
+
+	@Keyword
+	public static String getRecommandationListItems(){
+		def builder =new RestRequestObjectBuilder()
+		def requestObject = builder
+				.withRestRequestMethod("GET")
+				.withRestUrl(API_URL + apiversion + "/Recommendations/v21"+"?profileID="+GlobalVariable.USER_AdultProfileID+"&screen=home")
+				.withHttpHeaders([
+					//					new TestObjectProperty("Content-Type",ConditionType.EQUALS,"application/json"),
+					new TestObjectProperty("api-key",ConditionType.EQUALS,API_KEY),
+					new TestObjectProperty("Authorization",ConditionType.EQUALS,GlobalVariable.USER_Token),
+					new TestObjectProperty("platform",ConditionType.EQUALS,PLATFORM),
+					new TestObjectProperty("x-country",ConditionType.EQUALS,"vn"),
+					new TestObjectProperty("profileid",ConditionType.EQUALS,GlobalVariable.USER_AdultProfileID)
+				])
+				//				.withTextBodyContent('{"id": "5edf1138e3d0a70034a66435"}')
+				.build()
+		def response = WS.sendRequest(requestObject)
+		String responseBody = response.getResponseText()
+		println("rrrrrrrrrrr   : " + responseBody);
+		return responseBody;
+
+	}
+
+	@Keyword
+	public static int getNumberItemInRecommandation() {
+		List<String> list = JsonPath.parse(getRecommandationListItems()).read('$.data.._className');
+		return list.size();
+	}
+
+	@Keyword
+	public static int getAlbumItemsNumber() {
+		List<String> items = JsonPath.parse(APIs.getPageComponents("home", "home", "100",GlobalVariable.USER_AdultProfileID)).read('$.data.[?(@.code==\'album_video\')].title');
+		return items.size();
 	}
 }

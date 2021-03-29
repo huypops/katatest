@@ -15,12 +15,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//CustomKeywords.'commonActions.APICMS.cmsLogin'()
-//CustomKeywords.'commonActions.APICMS.getComicNameCanUnlock'()
+WebUI.openBrowser(GlobalVariable.SourceURL)
+
+WebUI.maximizeWindow()
+
 CustomKeywords.'commonActions.APIs.anonymousLogin'()
-CustomKeywords.'commonActions.APIs.getNumberItemInRecommandation'()
-//CustomKeywords.'commonActions.APIs.getUserToken'()
-//CustomKeywords.'commonActions.APIs.getProfileID'()
-//CustomKeywords.'commonActions.APIs.checkComicHasUnlockChapter'()
+
+CustomKeywords.'commonActions.BaseActions.ScrollToFooter'()
+
+CustomKeywords.'commonActions.PageActions.checkRecommandation'(findTestObject('POPS App UI/HomePageUI/RECOMMANDATION_PART'))
+
+CustomKeywords.'commonActions.PageActions.checkReCommandationCanClickable'(findTestObject('POPS App UI/HomePageUI/RECOMMANDATION_PART'))
+
+CustomKeywords.'commonActions.PageActions.checkBrokenImages'(findTestObject('Object Repository/CommonUI/IMG_THUMNAIL'),"src")
+
 
 

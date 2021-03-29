@@ -1,28 +1,19 @@
 package commonActions
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static org.junit.Assert.assertTrue
 
+import org.apache.commons.io.filefilter.TrueFileFilter
 import org.testng.Assert
 
+import com.jayway.jsonpath.JsonPath
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.sun.org.apache.bcel.internal.generic.RETURN
 
 import internal.GlobalVariable
+import javassist.bytecode.stackmap.BasicBlock.Catch
 
 public class PageActions {
 
@@ -51,6 +42,7 @@ public class PageActions {
 		WebUI.click(findTestObject('MyListPageUI/BUTTON_MY_LIST_INMOREPAGE'))
 	}
 
+	@Keyword
 	static String openSeriesPage(TestObject object) {
 		try {
 			WebUI.waitForElementPresent(object, 5)
@@ -60,9 +52,7 @@ public class PageActions {
 		}catch(NoSuchElementException ignored) {
 			println("Not found Series List  : " + ignored)
 		}
-
-
-		
+	
 	}
 
 	@Keyword
@@ -73,13 +63,52 @@ public class PageActions {
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
 	}
+	
+	@Keyword
+	public static Boolean checkBrokenImages(TestObject object, String attribute) {
+		ArrayList<String> imglinks = BaseActions.getAttributeElements(object,attribute);
+		for(int i=0; i<imglinks.size();i++) {
+			BaseActions.isLinkOK(imglinks.get(i))	
+			return	true;
+		}
+		return false;
+	}
+	
+	@Keyword
+	public static Boolean checkRecommandation(TestObject object) {	
+		List<String> list = WebUiCommonHelper.findWebElements(object, 2);
+		if (list.size()>0) {
+			Assert.assertEquals(list.size(), APIs.getNumberItemInRecommandation())
+			return true;
+		}
+		return false;
+	}
 
 	@Keyword
-	public static def checkBrokenImages(TestObject object) {
-		WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
-		SearchActions.searchAnyVideo(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), 'conan')
-		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
+	public static void checkReCommandationCanClickable(TestObject object) {
+		try {
+			BaseActions.clickFirstElement(object);
+		}catch(NoSuchElementException e){
+			println(e);
+			
+		}
+	}
+	
+	@Keyword
+	public static Boolean checkAlbumItems(TestObject object) {
+		List<String> list = WebUiCommonHelper.findWebElements(object, 2);
+		if (list.size()>0) {
+			Assert.assertEquals(list.size(), APIs.getAlbumItemsNumber())
+		}
+		return false;
+	}
+	@Keyword
+	public static void checkAlbumItemsCanClickable(TestObject object) {
+		try {
+			BaseActions.clickFirstElement(object);
+		}catch(NoSuchElementException e){
+			println(e);
+			
+		}
 	}
 }
