@@ -87,7 +87,7 @@ public class VideoPlayer {
 		String nextvideotitle = BaseActions.getTextFirstElement(findTestObject('Object Repository/VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'), 0)
 		WebUI.delay(20);
 		WebUI.click(object)
-		BaseActions.clickUsingJS(findTestObject('Object Repository/VideoDetailPageUI/button_next'),30);
+		BaseActions.ClickByJS(findTestObject('Object Repository/VideoDetailPageUI/button_next'),30);
 		if(currentvideotext.equalsIgnoreCase(nextvideotitle)){
 			return true;
 		}

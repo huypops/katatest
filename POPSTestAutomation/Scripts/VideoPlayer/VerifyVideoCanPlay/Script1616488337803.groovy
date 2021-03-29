@@ -17,6 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.SourceURL)
 
+WebUI.maximizeWindow()
+
+
 WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
 
 CustomKeywords.'commonActions.SearchActions.verifyComicSuggest'(findTestObject('SearchPageUI/COMIC_ITEMS'))

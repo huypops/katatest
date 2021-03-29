@@ -43,8 +43,8 @@ public class SearchActions {
 		WebUI.clearText(object);
 		WebUI.setText(object, videoname);
 		//		WebUI.sendKeys(object,  Keys.chord(Keys.ENTER));
-		WebUI.click(findTestObject('Object Repository/SearchPageUI/ICON_SEARCH_BUTTON'));
-		List<WebElement> elements = WebUI.findWebElements(findTestObject('Object Repository/SearchPageUI/RESULT_ELEMENTS'),0);
+		WebUI.click(findTestObject('SearchPageUI/ICON_SEARCH_BUTTON'));
+		List<WebElement> elements = WebUI.findWebElements(findTestObject('SearchPageUI/RESULT_ELEMENTS'),0);
 		String [] splitname = elements.get(0).getText().split(" ");
 		String name = splitname[0];
 		if(videoname.equalsIgnoreCase(name)) {
@@ -59,8 +59,8 @@ public class SearchActions {
 		WebUI.clearText(object);
 		WebUI.setText(object, comicname);
 		//		WebUI.sendKeys(object,  Keys.chord(Keys.ENTER));
-		WebUI.click(findTestObject('Object Repository/SearchPageUI/ICON_SEARCH_BUTTON'));
-		List<WebElement> elements = WebUI.findWebElements(findTestObject('Object Repository/SearchPageUI/COMIC_RESULT_ITEMS'),0);
+		WebUI.click(findTestObject('SearchPageUI/ICON_SEARCH_BUTTON'));
+		List<WebElement> elements = WebUI.findWebElements(findTestObject('SearchPageUI/COMIC_RESULT_ITEMS'),0);
 		String [] splitname = elements.get(0).getText().split(" ");
 		String name = splitname[0];
 		if(comicname.equalsIgnoreCase(name)) {
