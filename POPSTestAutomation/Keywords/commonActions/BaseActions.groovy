@@ -1,13 +1,13 @@
 package commonActions
 
-import org.bouncycastle.cert.crmf.ProofOfPossessionSigningKeyBuilder
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.jayway.jsonpath.JsonPath
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
@@ -18,9 +18,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-import groovy.json.StringEscapeUtils
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 
 public class BaseActions {
@@ -185,6 +182,15 @@ public class BaseActions {
 		println("get Title : " + WebUI.findWebElements(object,2).get(0).getAttribute(attribute))
 		return WebUI.findWebElements(object,2).get(0).getAttribute(attribute);
 	}
+
+	public static ArrayList<String> getAttributeElements(TestObject object, String attribute) {
+		List<WebElement> elements = WebUI.findWebElements(object,2);
+		ArrayList<String> attributeList = new ArrayList<String>();
+		for(int i=0;i<elements.size();i++) {
+			attributeList.add(elements.get(i).getAttribute(attribute));
+		}
+		return attributeList;
+	}
 	@Keyword
 	public static void clickFirstElement(TestObject object, int i) {
 		WebUI.findWebElements(object,10).get(i).click();
@@ -217,6 +223,7 @@ public class BaseActions {
 		WebElement element = WebUiCommonHelper.findWebElement(object,timeout);
 		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));
 	}
+
 
 
 
