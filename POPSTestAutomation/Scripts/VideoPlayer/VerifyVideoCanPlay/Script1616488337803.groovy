@@ -17,6 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.SourceURL)
 
+WebUI.maximizeWindow()
+
+
 WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
 
 CustomKeywords.'commonActions.SearchActions.verifyComicSuggest'(findTestObject('SearchPageUI/COMIC_ITEMS'))
@@ -27,7 +30,7 @@ CustomKeywords.'commonActions.SearchActions.searchAnyVideo'(findTestObject('Sear
 
 CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0)
 
-CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 0)
+CustomKeywords.'commonActions.BaseActions.ClickElementsByJS'(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3)
 
 CustomKeywords.'commonActions.VideoPlayer.verifyPlayer'( 25)
 WebUI.closeBrowser()

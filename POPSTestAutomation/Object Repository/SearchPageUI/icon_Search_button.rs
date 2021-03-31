@@ -6,12 +6,12 @@
    <elementGuidId>e9f444b2-1790-48bf-ab50-d7a0e0a39723</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[1]/following::*[name()='svg'][1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>svg</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@class='search-bar__icon']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -71,5 +71,11 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='naruto'])[1]/preceding::*[name()='svg'][1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//span[@class='search-bar__icon']//*[local-name()='svg']</value>
    </webElementXpaths>
 </WebElementEntity>

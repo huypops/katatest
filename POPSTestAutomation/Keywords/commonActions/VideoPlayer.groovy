@@ -85,9 +85,9 @@ public class VideoPlayer {
 		String currentvideotext = findTestObject('VideoDetailPageUI/CURRENT_VIDEO_TITLE_TEXT');
 		WebUI.scrollToElement(findTestObject('VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'),0);
 		String nextvideotitle = BaseActions.getTextFirstElement(findTestObject('Object Repository/VideoDetailPageUI/NEXT_VIDEO_TITLE_TEXT'), 0)
-		WebUI.delay(20);
+		WebUI.delay(25);
 		WebUI.click(object)
-		BaseActions.clickUsingJS(findTestObject('Object Repository/VideoDetailPageUI/button_next'),30);
+		BaseActions.ClickByJS(findTestObject('Object Repository/VideoDetailPageUI/button_next'),3);
 		if(currentvideotext.equalsIgnoreCase(nextvideotitle)){
 			return true;
 		}

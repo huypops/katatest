@@ -7,7 +7,8 @@ import com.kms.katalon.core.testobject.RestRequestObjectBuilder
 import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
-import groovy.json.StringEscapeUtils
+import net.sf.jasperreports.charts.util.XYZElement
+
 
 public class APICMS {
 	public static final String CMS_URL = "https://cms-aio.pops.vn";
@@ -56,22 +57,26 @@ public class APICMS {
 		def requestObject = builder
 				.withRestRequestMethod("GET")
 				.withRestUrl(CMS_URL + API_VERSION + COMIC_TITLE_LIST )
-				.withRestParameters([
-					new TestObjectProperty("filter", ConditionType.EQUALS, '{"skip":null,"order":"index ASC","where":{"isFree":false}}')
-				])
+				.withRestParameters([new TestObjectProperty("filter", ConditionType.EQUALS, '{"skip":null,"order":"index ASC","where":{"isFree":false}}')])
 				.withHttpHeaders([new TestObjectProperty("authorization",ConditionType.EQUALS,cmsLogin())])
 				.build()
 		def response = WS.sendRequest(requestObject)
 		String responseBody = response.getResponseText()
 		return responseBody;
 	}
-	
+
+	@Keyword
 	public static List<String> getComicIDListCanUnlock() {
 		List<String> comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.country==\'VN\')].id');
+		println(comicnamelist)
 		return comicnamelist;
 	}
 
+
+
+
 	public static String isComicPurchase(){
+		Collections.shuffle(getComicIDListCanUnlock());
 		for(int i=1;i<=getComicIDListCanUnlock().size();i++){
 			List<String> unlocklist = APIs.checkComicHasUnlockChapter(getComicIDListCanUnlock().get(i));
 			if(unlocklist.size()>0){
@@ -81,26 +86,45 @@ public class APICMS {
 		}
 		return "Comic List not found";
 	}
-	
+
 	@Keyword
-	public static String getComicNameCanUnlock()
-	{
+	public static String getComicNameCanUnlock() {
 		String coid=isComicPurchase();
 		String comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.id==\''+coid+'\')].title');
 		System.out.println("Comic can unlock is  : " + comicnamelist.replace("[\"", "").replace("\"]", ""));
 		return comicnamelist.replace("[\"", "").replace("\"]", "");
 	}
-	
+
 	@Keyword
-	public static List<String> getChapterListCanUnlock()
-	{
+	public static List<String> getChapterListCanUnlock() {
 		String coid=isComicPurchase();
 		String comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.id==\''+coid+'\')].title');
 		System.out.println("Comic can unlock is  : " + comicnamelist.replace("[\"", "").replace("\"]", ""));
 		return comicnamelist.replace("[\"", "").replace("\"]", "");
+	}
+
+	private static void shuffleList(List list) {
+		/*list size*/
+		int listSize = list.size();
+
+		/*Initialize random number generator*/
+		Random random = new Random();
+		for (int i = 0; i < listSize; i++) {
+
+			/*Get element from list at index i*/
+			int currentElement = list[i];
+
+			/*Generate a random index number within the list size range*/
+			int randomIndex = i + random.nextInt(listSize - i);
+
+			/*set/replace the element at current index with the element of random index*/
+			list.set(i, list.get(randomIndex));
+
+			/*set/replace the element at random index with the element at current index*/
+			list.set(randomIndex, currentElement);
+		}
 	}
 }
-
 
 
 

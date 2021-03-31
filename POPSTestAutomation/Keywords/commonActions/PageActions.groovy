@@ -52,7 +52,6 @@ public class PageActions {
 		}catch(NoSuchElementException ignored) {
 			println("Not found Series List  : " + ignored)
 		}
-	
 	}
 
 	@Keyword
@@ -60,22 +59,22 @@ public class PageActions {
 		WebUI.click(findTestObject('SearchPageUI/TEXTBOX_SEARCH'))
 		SearchActions.searchAnyVideo(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), 'conan')
 		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 0);
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'), 3);
+		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'));
+		BaseActions.ClickElementsByJS(findTestObject('SearchPageUI/LIST_TITLE_RESULT'),3);
 	}
-	
+
 	@Keyword
 	public static Boolean checkBrokenImages(TestObject object, String attribute) {
 		ArrayList<String> imglinks = BaseActions.getAttributeElements(object,attribute);
 		for(int i=0; i<imglinks.size();i++) {
-			BaseActions.isLinkOK(imglinks.get(i))	
+			BaseActions.isLinkOK(imglinks.get(i))
 			return	true;
 		}
 		return false;
 	}
-	
+
 	@Keyword
-	public static Boolean checkRecommandation(TestObject object) {	
+	public static Boolean checkRecommandation(TestObject object) {
 		List<String> list = WebUiCommonHelper.findWebElements(object, 2);
 		if (list.size()>0) {
 			Assert.assertEquals(list.size(), APIs.getNumberItemInRecommandation())
@@ -90,10 +89,9 @@ public class PageActions {
 			BaseActions.clickFirstElement(object);
 		}catch(NoSuchElementException e){
 			println(e);
-			
 		}
 	}
-	
+
 	@Keyword
 	public static Boolean checkAlbumItems(TestObject object) {
 		List<String> list = WebUiCommonHelper.findWebElements(object, 2);
@@ -108,7 +106,6 @@ public class PageActions {
 			BaseActions.clickFirstElement(object);
 		}catch(NoSuchElementException e){
 			println(e);
-			
 		}
 	}
 }
