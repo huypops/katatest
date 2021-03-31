@@ -12,51 +12,45 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>57432ab3-0a70-4fdb-bf29-b98135a83c1c</testSuiteGuid>
    <testCaseLink>
-      <guid>1d7d904f-f8b3-4888-ab96-5b0ec96c3073</guid>
+      <guid>69f49594-b1d0-4204-b33c-88ee5279a4ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Registration/Register/RegisterByEmailAndActivateLater</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/TH/VerifyNoBrokenImageOnHomePage_TH</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>97c0d9fc-7385-4824-b590-3fba491180c1</guid>
+      <guid>e9ae3584-60d5-422b-891c-136646890bcc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Registration/Register/RegisterByEmailActivateNow</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/TH/VerifyNoBrokenImageOn_2nd_Page_TH</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b4bedc7a-957a-41a1-a0f1-0f43e54c4f5c</guid>
+      <guid>fb75e3a9-4d8b-4c3f-87a1-3ee76d4c079d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/UI_Check/VerifyNoBrokenImageOnAnimePage</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnAnimePage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d5fc46c6-efe4-4e36-b9db-6bf812414f8f</guid>
+      <guid>5aeaf5f2-ad13-4e29-924a-30db6db0245d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/UI_Check/VerifyNoBrokenImageOnComicsPage</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnComicsPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f3e9afba-40f4-476d-9ad7-438625eb7503</guid>
+      <guid>b7bd28a0-96a5-433d-a8e1-4f397e95b0d2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/UI_Check/VerifyNoBrokenImageOnGamingsPage</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnGamingsPage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6d641337-edf4-4c05-a0b4-86edd2e70c9c</guid>
+      <guid>3763211c-4029-4d11-9657-b879c9f65070</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/UI_Check/VerifyNoBrokenImageOnHomePage</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnHomePage</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>aff138f3-6bea-4c8f-972d-30d93dcefa28</guid>
+      <guid>b7ef0e42-2b4e-427c-8ae2-261198219084</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Registration/ForgotAndResetPassword/VerifyOpenResetPasswordPageSuccessfully</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>94e641a2-a345-4cd5-916e-90b4c47629a6</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Registration/ForgotAndResetPassword/VerifyResetPasswordUsingCodeSuccessfully</testCaseId>
+      <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyPageComponentsInExploreMorePage</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
