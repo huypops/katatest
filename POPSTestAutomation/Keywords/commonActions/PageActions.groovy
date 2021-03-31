@@ -13,7 +13,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.sun.org.apache.bcel.internal.generic.RETURN
 
 import internal.GlobalVariable
-import javassist.bytecode.stackmap.BasicBlock.Catch
+
 
 public class PageActions {
 
