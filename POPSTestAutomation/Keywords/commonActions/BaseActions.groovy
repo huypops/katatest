@@ -19,6 +19,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import groovy.json.StringEscapeUtils
+
 
 public class BaseActions {
 	WebDriver driver = DriverFactory.getWebDriver()
@@ -170,21 +172,21 @@ public class BaseActions {
 
 	public static int getNumberofElements(TestObject object) {
 		WebUI.waitForElementPresent(object, 3);
-		List<WebElement> elements = WebUI.findWebElements(object,3);
+		List<WebElement> elements = WebUiCommonHelper.findWebElements(object,3);
 		return elements.size();
 	}
 
 	public static String getTextFirstElement(TestObject object, int i) {
-		return WebUI.findWebElements(object,2).get(i).getText();
+		return WebUiCommonHelper.findWebElements(object,2).get(i).getText();
 	}
 
 	public static String getAttributeFirstElement(TestObject object, String attribute) {
-		println("get Title : " + WebUI.findWebElements(object,2).get(0).getAttribute(attribute))
-		return WebUI.findWebElements(object,2).get(0).getAttribute(attribute);
+		println("get Title : " + WebUiCommonHelper.findWebElements(object,2).get(0).getAttribute(attribute))
+		return WebUiCommonHelper.findWebElements(object,2).get(0).getAttribute(attribute);
 	}
 
 	public static ArrayList<String> getAttributeElements(TestObject object, String attribute) {
-		List<WebElement> elements = WebUI.findWebElements(object,2);
+		List<WebElement> elements = WebUiCommonHelper.findWebElements(object,2);
 		ArrayList<String> attributeList = new ArrayList<String>();
 		for(int i=0;i<elements.size();i++) {
 			attributeList.add(elements.get(i).getAttribute(attribute));
@@ -193,10 +195,11 @@ public class BaseActions {
 	}
 	@Keyword
 	public static void clickFirstElement(TestObject object, int i) {
-		WebUI.findWebElements(object,10).get(i).click();
+		WebUiCommonHelper.findWebElements(object,10).get(i).click();
 	}
+	@Keyword
 	public static void clickFirstElement(TestObject object) {
-		WebUI.findWebElements(object,10).get(0).click();
+		WebUiCommonHelper.findWebElements(object,10).get(0).click();
 	}
 
 
@@ -224,6 +227,22 @@ public class BaseActions {
 		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));
 	}
 
+	@Keyword
+	def static ClickElementsByJS(TestObject object, int timeout)
+	{
+		List<WebElement> elements = WebUiCommonHelper.findWebElements(object,timeout);
+		int number = elements.size();
+		WebElement element = elements.get(randomNumber(number));
+		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(element));
+	}
+
+
+	public static int randomNumber(int range) {
+		Random rand = new Random();
+		int upperbound = range;
+		int int_random = rand.nextInt(upperbound);
+		return int_random;
+	}
 
 
 

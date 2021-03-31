@@ -15,12 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//CustomKeywords.'commonActions.APICMS.cmsLogin'()
-//CustomKeywords.'commonActions.APICMS.getComicNameCanUnlock'()
-CustomKeywords.'commonActions.APIs.anonymousLogin'()
-CustomKeywords.'commonActions.APIs.getNumberItemInRecommandation'()
+CustomKeywords.'commonActions.APICMS.cmsLogin'()
+CustomKeywords.'commonActions.APICMS.getComicIDListCanUnlock'()
+//CustomKeywords.'commonActions.APIs.anonymousLogin'()
+//CustomKeywords.'commonActions.APIs.getNumberItemInRecommandation'()
 //CustomKeywords.'commonActions.APIs.getUserToken'()
 //CustomKeywords.'commonActions.APIs.getProfileID'()
-//CustomKeywords.'commonActions.APIs.checkComicHasUnlockChapter'()
+//CustomKeywords.'commonActions.APICMS.getComicIDListCanUnlock'()
 
 

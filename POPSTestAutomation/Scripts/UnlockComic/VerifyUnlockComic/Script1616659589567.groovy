@@ -24,12 +24,12 @@ CustomKeywords.'commonActions.SignInActions.SignInWithValidAccount'('huy.thanh@p
 
 CustomKeywords.'commonActions.SearchActions.searchAnyComic'(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), APICMS.getComicNameCanUnlock())
 
-CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('SearchPageUI/COMIC_RESULT_ITEMS'), 0)
+CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('SearchPageUI/COMIC_RESULT_ITEMS'))
 
 WebUI.click(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_SORT'))
 
-CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON'), 
-    0)
+CustomKeywords.'commonActions.BaseActions.ClickElementsByJS'(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON'), 
+    3)
 
 WebUI.click(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_BUY_NOW'))
 
