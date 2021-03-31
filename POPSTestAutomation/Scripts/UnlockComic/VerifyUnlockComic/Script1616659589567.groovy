@@ -28,8 +28,10 @@ CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('Sea
 
 WebUI.click(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_SORT'))
 
-CustomKeywords.'commonActions.BaseActions.ClickElementsByJS'(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON'), 
-    3)
+CustomKeywords.'commonActions.Comics.checkUnlockChapterVisible'(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON'))
+
+CustomKeywords.'commonActions.BaseActions.clickFirstElement'(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON'))
 
 WebUI.click(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_BUY_NOW'))
 
+WebUI.closeBrowser()

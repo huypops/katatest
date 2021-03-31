@@ -36,7 +36,7 @@ public class BaseActions {
 	/*Scroll down until page load complete by checking if POPS Logo in Footer visible in viewport
 	 * */
 	@Keyword
-	def ScrollToFooter() {
+	def static ScrollToFooter() {
 
 		TestObject POPS_Logo_Footer=	findTestObject('POPS App UI/Footer/POPS_Logo_In_Footer')
 		Boolean isDisplayed = false
@@ -79,7 +79,7 @@ public class BaseActions {
 		}
 	}
 
-	def ScrollByHeight() {
+	def static ScrollByHeight() {
 		WebUI.executeJavaScript("window.scrollTo(0, document.body.scrollHeight)",null)
 	}
 

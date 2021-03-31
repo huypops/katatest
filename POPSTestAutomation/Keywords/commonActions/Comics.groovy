@@ -6,6 +6,8 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import java.text.BreakIterator
+
 import org.openqa.selenium.WebElement
 import org.testng.Assert
 
@@ -31,5 +33,21 @@ public class Comics {
 	def CheckComicRankingDisplay20Items(TestObject object) {
 		List<WebElement> listOfComicRankingItems=	WebUiCommonHelper.findWebElements(object, 5)
 		Assert.assertEquals(listOfComicRankingItems.size(),20)
+	}
+	
+	@Keyword
+	def checkUnlockChapterVisible(TestObject object) {
+		Boolean isDisplayed = false		
+		List<WebElement> listOfComicRankingItems=	WebUiCommonHelper.findWebElements(object, 5)
+			if (listOfComicRankingItems.size()==0) {
+				while (isDisplayed== false) {
+					BaseActions.ScrollToFooter();
+					BaseActions.ClickByJS(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_LOAD_MORE'), 3)
+					isDisplayed=WebUI.verifyElementVisible(object, FailureHandling.OPTIONAL);
+					break;
+				}
+					
+								
+			}
 	}
 }

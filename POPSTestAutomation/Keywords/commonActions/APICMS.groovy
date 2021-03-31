@@ -68,6 +68,7 @@ public class APICMS {
 	@Keyword
 	public static List<String> getComicIDListCanUnlock() {
 		List<String> comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.country==\'VN\')].id');
+		println(comicnamelist)
 		return comicnamelist;
 	}
 

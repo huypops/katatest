@@ -60,7 +60,7 @@ public class PageActions {
 		SearchActions.searchAnyVideo(findTestObject('SearchPageUI/TEXTBOX_SEARCH'), 'conan')
 		WebUI.waitForElementPresent(findTestObject('SearchPageUI/RESULT_ELEMENTS'), 1);
 		BaseActions.clickFirstElement(findTestObject('SearchPageUI/RESULT_ELEMENTS'));
-		BaseActions.clickFirstElement(findTestObject('SearchPageUI/LIST_TITLE_RESULT'));
+		BaseActions.ClickElementsByJS(findTestObject('SearchPageUI/LIST_TITLE_RESULT'),3);
 	}
 
 	@Keyword
