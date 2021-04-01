@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>VerifyPageComponentsInExploreMorePage</name>
-   <tag>smoke</tag>
-   <comment></comment>
-   <testCaseGuid>fa5070e7-d4ef-41e8-9bd9-0365ab0d1019</testCaseGuid>
-</TestCaseEntity>

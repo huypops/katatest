@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>RegisterByEmailActivateNow</name>
-   <tag>registration</tag>
-   <comment></comment>
-   <testCaseGuid>2f186b6f-ef40-43c0-8806-c742cd0510c8</testCaseGuid>
-</TestCaseEntity>
