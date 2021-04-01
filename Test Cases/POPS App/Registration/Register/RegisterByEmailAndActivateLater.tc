@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RegisterByEmailAndActivateLater</name>
+   <tag>registration</tag>
+   <comment></comment>
+   <testCaseGuid>bb810ec4-77f4-4b6a-afce-508d87b121ca</testCaseGuid>
+</TestCaseEntity>

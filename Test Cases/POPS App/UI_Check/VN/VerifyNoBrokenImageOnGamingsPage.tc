@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VerifyNoBrokenImageOnGamingsPage</name>
+   <tag>smoke,regression</tag>
+   <comment></comment>
+   <testCaseGuid>5c6f3cbf-0e7c-4b2b-aa16-6569e6e017b9</testCaseGuid>
+</TestCaseEntity>

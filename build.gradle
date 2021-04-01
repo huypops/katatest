@@ -1,0 +1,32 @@
+plugins {
+  id 'java'
+  id "com.katalon.gradle-plugin" version "0.0.7"
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // sample dependencies
+  // rest-assured
+  // compile 'io.rest-assured:rest-assured:3.2.0'
+  // JsonPath
+  // compile 'io.rest-assured:json-path:3.2.0'
+  // XmlPath
+  // compile 'io.rest-assured:json-path:3.2.0'
+  // JSON Schema Validation
+  //  'io.rest-assured:json-schema-validator:3.2.0'
+  
+  
+
+    compile 'com.jayway.jsonpath:json-path:2.4.0'
+    compile 'ru.yandex.qatools.ashot:ashot:1.5.4'
+    compile 'com.github.romankh3:image-comparison:4.3.0'
+    compile 'org.json:json:20210307'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'stax:stax-api:1.0.1'
+    compile 'net.minidev:accessors-smart:1.2'
+    compile 'org.ow2.asm:asm:5.0.4'
+  
+}
