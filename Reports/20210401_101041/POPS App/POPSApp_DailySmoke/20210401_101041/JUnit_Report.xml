@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="POPSApp_DailySmoke" time="24.688" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="POPSApp_DailySmoke" tests="1" failures="0" errors="0" time="24.688" skips="0" timestamp="2021-04-01 10:10:48" hostname="huy.thanh - CA-HUYTHANH.pops.local" id="Test Suites/POPS App/POPSApp_DailySmoke">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041"/>
+         <property name="logFiles" value="D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\execution0.log"/>
+         <property name="attachments" value="D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246657403.png, D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246660398.png, D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246663418.png, D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246666416.png"/>
+         <property name="hostName" value="huy.thanh - CA-HUYTHANH.pops.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.9.0.208"/>
+         <property name="browser" value="Chrome 89.0.4389.114"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="3cf83874ee008ae4b2260f31f890c7de"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Component/VerifyAlbumDisplayed" time="22.728" classname="Test Cases/Component/VerifyAlbumDisplayed" status="PASSED">
+         <system-out><![CDATA[2021-04-01 10:10:49 - [TEST_CASE][PASSED] - Test Cases/Component/VerifyAlbumDisplayed: Test Cases/Component/VerifyAlbumDisplayed
+
+2021-04-01 10:10:49 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2021-04-01 10:10:49 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2021-04-01 10:10:49 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2021-04-01 10:10:49 - [TEST_STEP][PASSED] - openBrowser(SourceURL): Browser is opened with url: 'https://pops.vn/'
+
+2021-04-01 10:10:50 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-04-01 10:10:50 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-04-01 10:10:53 - [MESSAGE][PASSED] - Browser is opened with url: 'https://pops.vn/'
+
+2021-04-01 10:10:53 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-01 10:10:53 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-01 10:10:53 - [TEST_STEP][PASSED] - commonActions.APIs.anonymousLogin(): commonActions.APIs.anonymousLogin is PASSED
+
+2021-04-01 10:10:54 - [MESSAGE][INFO] - HAR: D:\Working\AUTO\KATAWEB\popstestautomation\Reports\20210401_101041\POPS App\POPSApp_DailySmoke\20210401_101041\requests\main\0.har
+
+2021-04-01 10:10:54 - [MESSAGE][PASSED] - Send request successfully
+
+2021-04-01 10:10:54 - [MESSAGE][PASSED] - commonActions.APIs.anonymousLogin is PASSED
+
+2021-04-01 10:10:54 - [TEST_STEP][PASSED] - commonActions.BaseActions.ScrollToFooter(): commonActions.BaseActions.ScrollToFooter is PASSED
+
+2021-04-01 10:10:54 - [MESSAGE][PASSED] - Execute JavaScript 'window.scrollTo(0, document.body.scrollHeight)' successfully
+
+2021-04-01 10:10:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-04-01 10:10:58 - [MESSAGE][WARNING] - Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport (Root cause: com.kms.katalon.core.exception.StepFailedException: Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.doCall(VerifyElementVisibleInViewportKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.call(VerifyElementVisibleInViewportKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.verifyElementVisibleInViewport(VerifyElementVisibleInViewportKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.execute(VerifyElementVisibleInViewportKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementInViewport(WebUiBuiltInKeywords.groovy:4050)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementInViewport$2.call(Unknown Source)
+	at commonActions.BaseActions.ScrollToFooter(BaseActions.groovy:46)
+	at commonActions.BaseActions.invokeMethod(BaseActions.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyAlbumDisplayed.run(VerifyAlbumDisplayed:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1617246641461.run(TempTestSuite1617246641461.groovy:39)
+)
+[[ATTACHMENT|D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246657403.png]]
+
+2021-04-01 10:10:58 - [MESSAGE][PASSED] - Execute JavaScript 'window.scrollTo(0, document.body.scrollHeight)' successfully
+
+2021-04-01 10:11:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-04-01 10:11:01 - [MESSAGE][WARNING] - Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport (Root cause: com.kms.katalon.core.exception.StepFailedException: Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.doCall(VerifyElementVisibleInViewportKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.call(VerifyElementVisibleInViewportKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.verifyElementVisibleInViewport(VerifyElementVisibleInViewportKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.execute(VerifyElementVisibleInViewportKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementInViewport(WebUiBuiltInKeywords.groovy:4050)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementInViewport$2.call(Unknown Source)
+	at commonActions.BaseActions.ScrollToFooter(BaseActions.groovy:46)
+	at commonActions.BaseActions.invokeMethod(BaseActions.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyAlbumDisplayed.run(VerifyAlbumDisplayed:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1617246641461.run(TempTestSuite1617246641461.groovy:39)
+)
+[[ATTACHMENT|D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246660398.png]]
+
+2021-04-01 10:11:01 - [MESSAGE][PASSED] - Execute JavaScript 'window.scrollTo(0, document.body.scrollHeight)' successfully
+
+2021-04-01 10:11:03 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-04-01 10:11:04 - [MESSAGE][WARNING] - Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport (Root cause: com.kms.katalon.core.exception.StepFailedException: Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.doCall(VerifyElementVisibleInViewportKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.call(VerifyElementVisibleInViewportKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.verifyElementVisibleInViewport(VerifyElementVisibleInViewportKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.execute(VerifyElementVisibleInViewportKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementInViewport(WebUiBuiltInKeywords.groovy:4050)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementInViewport$2.call(Unknown Source)
+	at commonActions.BaseActions.ScrollToFooter(BaseActions.groovy:46)
+	at commonActions.BaseActions.invokeMethod(BaseActions.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyAlbumDisplayed.run(VerifyAlbumDisplayed:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1617246641461.run(TempTestSuite1617246641461.groovy:39)
+)
+[[ATTACHMENT|D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246663418.png]]
+
+2021-04-01 10:11:04 - [MESSAGE][PASSED] - Execute JavaScript 'window.scrollTo(0, document.body.scrollHeight)' successfully
+
+2021-04-01 10:11:06 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-04-01 10:11:07 - [MESSAGE][WARNING] - Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport (Root cause: com.kms.katalon.core.exception.StepFailedException: Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present but is not visible in viewport
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.doCall(VerifyElementVisibleInViewportKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword$_verifyElementVisibleInViewport_closure1.call(VerifyElementVisibleInViewportKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.verifyElementVisibleInViewport(VerifyElementVisibleInViewportKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementVisibleInViewportKeyword.execute(VerifyElementVisibleInViewportKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementInViewport(WebUiBuiltInKeywords.groovy:4050)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementInViewport$2.call(Unknown Source)
+	at commonActions.BaseActions.ScrollToFooter(BaseActions.groovy:46)
+	at commonActions.BaseActions.invokeMethod(BaseActions.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at VerifyAlbumDisplayed.run(VerifyAlbumDisplayed:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:398)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:389)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:368)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:255)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:203)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:152)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:95)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1617246641461.run(TempTestSuite1617246641461.groovy:39)
+)
+[[ATTACHMENT|D:\\Working\\AUTO\\KATAWEB\\popstestautomation\\Reports\\20210401_101041\\POPS App\\POPSApp_DailySmoke\\20210401_101041\\1617246666416.png]]
+
+2021-04-01 10:11:07 - [MESSAGE][PASSED] - Execute JavaScript 'window.scrollTo(0, document.body.scrollHeight)' successfully
+
+2021-04-01 10:11:09 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2021-04-01 10:11:09 - [MESSAGE][PASSED] - Object 'Object Repository/POPS App UI/Footer/POPS_Logo_In_Footer' is present and visible in viewport
+
+2021-04-01 10:11:09 - [MESSAGE][PASSED] - commonActions.BaseActions.ScrollToFooter is PASSED
+
+2021-04-01 10:11:09 - [TEST_STEP][PASSED] - commonActions.PageActions.checkAlbumItemsCanClickable(findTestObject("Object Repository/POPS App UI/HomePageUI/ALBUM_PART")): commonActions.PageActions.checkAlbumItemsCanClickable is PASSED
+
+2021-04-01 10:11:10 - [MESSAGE][PASSED] - commonActions.PageActions.checkAlbumItemsCanClickable is PASSED
+
+2021-04-01 10:11:10 - [TEST_STEP][PASSED] - commonActions.PageActions.checkBrokenImages(findTestObject("Object Repository/CommonUI/IMG_THUMNAIL"), "src"): commonActions.PageActions.checkBrokenImages is PASSED
+
+2021-04-01 10:11:11 - [MESSAGE][INFO] - HAR: D:\Working\AUTO\KATAWEB\popstestautomation\Reports\20210401_101041\POPS App\POPSApp_DailySmoke\20210401_101041\requests\main\1.har
+
+2021-04-01 10:11:11 - [MESSAGE][PASSED] - Send request successfully
+
+2021-04-01 10:11:11 - [MESSAGE][PASSED] - commonActions.PageActions.checkBrokenImages is PASSED
+
+2021-04-01 10:11:11 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+2021-04-01 10:11:11 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2021-04-01 10:11:11 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-01 10:10:48 - [TEST_SUITE][PASSED] - POPSApp_DailySmoke: Test Cases/Component/VerifyAlbumDisplayed]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

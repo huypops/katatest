@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POPSApp_DailySmoke,Chrome 89.0.4389.114,,,2021-04-01 10:10:48,2021-04-01 10:11:11,23.694s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyAlbumDisplayed,Chrome 89.0.4389.114,,,2021-04-01 10:10:49,2021-04-01 10:11:11,22.728s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.114,,,2021-04-01 10:10:49,2021-04-01 10:10:49,0.008s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.114,,,2021-04-01 10:10:49,2021-04-01 10:10:53,3.544s,PASSED
+maximizeWindow(),Chrome 89.0.4389.114,,,2021-04-01 10:10:53,2021-04-01 10:10:53,0.128s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.114,,,2021-04-01 10:10:53,2021-04-01 10:10:54,1.041s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.114,,,2021-04-01 10:10:54,2021-04-01 10:11:09,15.273s,PASSED
+"commonActions.PageActions.checkAlbumItemsCanClickable(findTestObject(""Object Repository/POPS App UI/HomePageUI/ALBUM_PART""))",Chrome 89.0.4389.114,,,2021-04-01 10:11:09,2021-04-01 10:11:10,0.642s,PASSED
+"commonActions.PageActions.checkBrokenImages(findTestObject(""Object Repository/CommonUI/IMG_THUMNAIL""), ""src"")",Chrome 89.0.4389.114,,,2021-04-01 10:11:10,2021-04-01 10:11:11,1.845s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.114,,,2021-04-01 10:11:11,2021-04-01 10:11:11,0.002s,PASSED

@@ -1,0 +1,294 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POPSApp_DailySmoke,Chrome 89.0.4389.90,,,2021-03-29 09:27:56,2021-03-29 09:41:53,13m - 56.708s,ERROR
+,,,,,,,
+Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnAnimePage,Chrome 89.0.4389.90,,"smoke,regression",2021-03-29 09:27:57,2021-03-29 09:29:38,1m - 40.809s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:27:57,2021-03-29 09:27:57,0.012s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:27:57,2021-03-29 09:27:57,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:27:57,2021-03-29 09:28:01,3.165s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:28:01,2021-03-29 09:28:01,0.127s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/menu_4_Anime""))",Chrome 89.0.4389.90,,,2021-03-29 09:28:01,2021-03-29 09:28:03,2.140s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.90,,,2021-03-29 09:28:03,2021-03-29 09:28:04,0.906s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:28:04,2021-03-29 09:28:37,33.167s,PASSED
+commonActions.PageActions.verifyLinksOnPage(),Chrome 89.0.4389.90,,,2021-03-29 09:28:37,2021-03-29 09:29:38,1m - 1.069s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:29:38,2021-03-29 09:29:38,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:29:38,2021-03-29 09:29:38,0.001s,PASSED
+,,,,,,,
+Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnComicsPage,Chrome 89.0.4389.90,,"smoke,regression",2021-03-29 09:29:38,2021-03-29 09:30:48,1m - 9.838s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:29:38,2021-03-29 09:29:38,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:29:38,2021-03-29 09:29:38,0.001s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:29:38,2021-03-29 09:29:41,3.318s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:29:41,2021-03-29 09:29:42,0.116s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/menu_2_Comics""))",Chrome 89.0.4389.90,,,2021-03-29 09:29:42,2021-03-29 09:29:44,2.101s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:29:44,2021-03-29 09:30:07,23.151s,PASSED
+commonActions.PageActions.verifyLinksOnPage(),Chrome 89.0.4389.90,,,2021-03-29 09:30:07,2021-03-29 09:30:48,41.009s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:30:48,2021-03-29 09:30:48,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:30:48,2021-03-29 09:30:48,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnGamingsPage,Chrome 89.0.4389.90,,"smoke,regression",2021-03-29 09:30:48,2021-03-29 09:31:20,32.056s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:30:48,2021-03-29 09:30:48,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:30:48,2021-03-29 09:30:48,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:30:48,2021-03-29 09:30:51,3.135s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:30:51,2021-03-29 09:30:51,0.118s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/menu_3_Gaming""))",Chrome 89.0.4389.90,,,2021-03-29 09:30:51,2021-03-29 09:30:53,2.145s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:30:53,2021-03-29 09:31:05,11.356s,PASSED
+commonActions.PageActions.verifyLinksOnPage(),Chrome 89.0.4389.90,,,2021-03-29 09:31:05,2021-03-29 09:31:20,15.164s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:31:20,2021-03-29 09:31:20,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:31:20,2021-03-29 09:31:20,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnHomePage,Chrome 89.0.4389.90,,"smoke,regression",2021-03-29 09:31:20,2021-03-29 09:32:19,59.019s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:31:20,2021-03-29 09:31:20,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:31:20,2021-03-29 09:31:20,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:31:20,2021-03-29 09:31:23,3.059s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:31:23,2021-03-29 09:31:23,0.114s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:31:23,2021-03-29 09:31:41,17.498s,PASSED
+commonActions.PageActions.verifyLinksOnPage(),Chrome 89.0.4389.90,,,2021-03-29 09:31:41,2021-03-29 09:32:19,38.213s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:19,2021-03-29 09:32:19,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:19,2021-03-29 09:32:19,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/UI_Check/VN/VerifyPageComponentsInExploreMorePage,Chrome 89.0.4389.90,,smoke,2021-03-29 09:32:19,2021-03-29 09:32:26,7.548s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:19,2021-03-29 09:32:19,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:19,2021-03-29 09:32:19,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:32:19,2021-03-29 09:32:24,5.062s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/menu_5_Them""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:24,2021-03-29 09:32:26,2.045s,PASSED
+"commonActions.CMS_APIs.getCMSPageLayout(""more"", ""VN"")",Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:26,0.307s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:26,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:26,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/SignInSignOut/SignInWithFacebook,Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:47,20.508s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:26,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:26,2021-03-29 09:32:26,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:32:27,2021-03-29 09:32:30,3.185s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:32:30,2021-03-29 09:32:30,0.112s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/button_DangNhap""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:30,2021-03-29 09:32:32,1.937s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/button_FacebookLogin""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:32,2021-03-29 09:32:34,2.556s,PASSED
+parentWindow = getWindowIndex(),Chrome 89.0.4389.90,,,2021-03-29 09:32:34,2021-03-29 09:32:34,0.012s,PASSED
+"switchToWindowTitle(""Facebook"")",Chrome 89.0.4389.90,,,2021-03-29 09:32:34,2021-03-29 09:32:35,0.824s,PASSED
+"setText(findTestObject(""POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/input_Email""), LOGIN_FACEBOOK_EMAIL)",Chrome 89.0.4389.90,,,2021-03-29 09:32:35,2021-03-29 09:32:36,0.717s,PASSED
+"setText(findTestObject(""POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/input_Password""), LOGIN_FACEBOOK_PASSWORD)",Chrome 89.0.4389.90,,,2021-03-29 09:32:36,2021-03-29 09:32:37,0.714s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/FacebookLoginPageUI/button_Login""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:37,2021-03-29 09:32:37,0.272s,PASSED
+switchToWindowIndex(parentWindow),Chrome 89.0.4389.90,,,2021-03-29 09:32:37,2021-03-29 09:32:37,0.016s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/icon_AccountAvatar""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:37,2021-03-29 09:32:45,8.528s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/button_EditAccount""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:45,2021-03-29 09:32:46,0.683s,PASSED
+"verifyElementAttributeValue(findTestObject(""POPS App UI/SettingsPageUI/Account General/input_Email""), ""value"", LOGIN_FACEBOOK_EMAIL, 0)",Chrome 89.0.4389.90,,,2021-03-29 09:32:46,2021-03-29 09:32:47,0.785s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:47,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:47,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/SignInSignOut/SignInWithGoogle,Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:57,10.364s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:47,0.001s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:47,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:32:47,2021-03-29 09:32:50,3.098s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:32:50,2021-03-29 09:32:50,0.116s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/button_DangNhap""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:50,2021-03-29 09:32:52,1.999s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/button_GoogleLogin""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:52,2021-03-29 09:32:55,2.872s,PASSED
+parentWindow = getWindowIndex(),Chrome 89.0.4389.90,,,2021-03-29 09:32:55,2021-03-29 09:32:55,0.007s,PASSED
+switchToWindowIndex(1),Chrome 89.0.4389.90,,,2021-03-29 09:32:55,2021-03-29 09:32:55,0.010s,PASSED
+"setText(findTestObject(""POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/input_GoogleEmail""), LOGIN_GOOGLE_EMAIL)",Chrome 89.0.4389.90,Google Account for testing must be created with a new phone number - which has not associated with any account before.,,2021-03-29 09:32:55,2021-03-29 09:32:57,1.587s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/button_Next""))",Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.490s,PASSED
+"setText(findTestObject(""POPS App UI/SignIn_DangNhap/GoogleLoginPageUI/input_GooglePassword""), LOGIN_GOOGLE_PASSWORD)",Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.027s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.001s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/SignInSignOut/VerifySignInWithValidCredentialSuccessfully,Chrome 89.0.4389.90,,"registration,signin",2021-03-29 09:32:57,2021-03-29 09:33:12,14.736s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:32:57,0.001s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:32:57,2021-03-29 09:33:01,3.088s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:33:01,2021-03-29 09:33:01,0.112s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/button_DangNhap""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:01,2021-03-29 09:33:03,2.524s,PASSED
+"sendKeys(findTestObject(""POPS App UI/SignIn_DangNhap/input_Email""), ""shally.h.88@gmail.com"")",Chrome 89.0.4389.90,,,2021-03-29 09:33:03,2021-03-29 09:33:06,2.370s,PASSED
+"sendKeys(findTestObject(""POPS App UI/SignIn_DangNhap/input_Password""), ""1234567890"")",Chrome 89.0.4389.90,,,2021-03-29 09:33:06,2021-03-29 09:33:06,0.290s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/button_DangNhap""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:06,2021-03-29 09:33:06,0.481s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/icon_AccountAvatar""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:06,2021-03-29 09:33:10,3.559s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/button_EditAccount""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:10,2021-03-29 09:33:11,1.405s,PASSED
+"verifyElementAttributeValue(findTestObject(""POPS App UI/SettingsPageUI/Account General/input_Email""), ""value"", ""shally.h.88@gmail.com"", 0)",Chrome 89.0.4389.90,,,2021-03-29 09:33:11,2021-03-29 09:33:12,0.770s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:12,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:12,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/SignInSignOut/VerifySignOutSuccessfully,Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:28,16.387s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:12,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:12,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:33:12,2021-03-29 09:33:16,3.364s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:33:16,2021-03-29 09:33:16,0.113s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/button_DangNhap""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:16,2021-03-29 09:33:18,2.594s,PASSED
+"callTestCase(findTestCase(""POPS App/CommonTestCases/SignInWithAccount""), [""Email"":""shally.h.88@gmail.com"", ""Password"":""1234567890""], STOP_ON_FAILURE)",Chrome 89.0.4389.90,,,2021-03-29 09:33:18,2021-03-29 09:33:22,3.906s,PASSED
+"verifyElementNotPresent(findTestObject(""POPS App UI/TopMenu/button_DangNhap""), 3)",Chrome 89.0.4389.90,,,2021-03-29 09:33:22,2021-03-29 09:33:26,3.543s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/icon_AccountAvatar""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:26,2021-03-29 09:33:26,0.280s,PASSED
+"commonActions.BaseActions.ClickByJS(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/Link_SignOut""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:26,2021-03-29 09:33:27,0.748s,PASSED
+"click(findTestObject(""POPS App UI/SignIn_DangNhap/POPS_Logo""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:27,2021-03-29 09:33:27,0.672s,PASSED
+"verifyElementInViewport(findTestObject(""POPS App UI/TopMenu/button_DangNhap""), 0)",Chrome 89.0.4389.90,,,2021-03-29 09:33:27,2021-03-29 09:33:28,1.027s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:28,2021-03-29 09:33:28,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:28,2021-03-29 09:33:28,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/Register/RegisterByEmailActivateNow,Chrome 89.0.4389.90,,registration,2021-03-29 09:33:28,2021-03-29 09:34:06,37.802s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:28,2021-03-29 09:33:28,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:33:28,2021-03-29 09:33:28,0.000s,PASSED
+"comment(""This is a test"")",Chrome 89.0.4389.90,,,2021-03-29 09:33:29,2021-03-29 09:33:29,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:33:29,2021-03-29 09:33:33,4.559s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:33:33,2021-03-29 09:33:33,0.114s,PASSED
+"click(findTestObject(""POPS App UI/HomePageUI/AvatarOnTopMenu""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:33,2021-03-29 09:33:34,1.014s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/SignIn_Link""))",Chrome 89.0.4389.90,,,2021-03-29 09:33:34,2021-03-29 09:34:06,31.974s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:06,2021-03-29 09:34:06,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:06,2021-03-29 09:34:06,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/Register/RegisterByEmailAndActivateLater,Chrome 89.0.4389.90,,registration,2021-03-29 09:34:06,2021-03-29 09:34:44,37.924s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:06,2021-03-29 09:34:06,0.001s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:06,2021-03-29 09:34:06,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:34:06,2021-03-29 09:34:10,3.261s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:34:10,2021-03-29 09:34:10,0.115s,PASSED
+"click(findTestObject(""POPS App UI/HomePageUI/AvatarOnTopMenu""))",Chrome 89.0.4389.90,,,2021-03-29 09:34:10,2021-03-29 09:34:12,2.470s,PASSED
+"click(findTestObject(""POPS App UI/TopMenu/Settings_DropDownMenuUI/SignIn_Link""))",Chrome 89.0.4389.90,,,2021-03-29 09:34:12,2021-03-29 09:34:44,31.926s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:44,2021-03-29 09:34:44,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:44,2021-03-29 09:34:44,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/ForgotAndResetPassword/VerifyResetPasswordUsingCodeSuccessfully,Chrome 89.0.4389.90,,"registration,forgot_password",2021-03-29 09:34:44,2021-03-29 09:35:31,46.900s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:44,2021-03-29 09:34:44,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:34:44,2021-03-29 09:34:44,0.000s,PASSED
+"callTestCase(findTestCase(""POPS App/CommonTestCases/OpenForgotPasswordPage""), [:], STOP_ON_FAILURE)",Chrome 89.0.4389.90,,,2021-03-29 09:34:44,2021-03-29 09:34:53,8.371s,PASSED
+"sendKeys(findTestObject(""POPS App UI/ForgotPassword_QuenMatKhau/input_Email""), EMAIL_TO_RESET_PASSWORD + ""@mailinator.com"")",Chrome 89.0.4389.90,,,2021-03-29 09:34:53,2021-03-29 09:34:53,0.308s,PASSED
+"click(findTestObject(""POPS App UI/ForgotPassword_QuenMatKhau/button_Send""))",Chrome 89.0.4389.90,,,2021-03-29 09:34:53,2021-03-29 09:34:53,0.376s,PASSED
+"verifyElementVisible(findTestObject(""POPS App UI/ToastMessage/ToastMessage_Sucessfull""))",Chrome 89.0.4389.90,,,2021-03-29 09:34:53,2021-03-29 09:34:54,0.888s,PASSED
+"verifyElementText(findTestObject(""POPS App UI/ToastMessage/ToastMessage_Content""), ""Một email đã được gửi đến tài khoản email của bạn! Vui lòng kiểm tra email"")",Chrome 89.0.4389.90,,,2021-03-29 09:34:54,2021-03-29 09:34:54,0.255s,PASSED
+"code = commonActions.Mailinator.OpenMailinatorMailboxAndGetCode(EMAIL_TO_RESET_PASSWORD, ""Thay đổi mật khẩu tài khoản POPS"")",Chrome 89.0.4389.90,,,2021-03-29 09:34:54,2021-03-29 09:35:31,36.560s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:35:31,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:35:31,0.000s,PASSED
+,,,,,,,
+Test Cases/POPS App/Registration/ForgotAndResetPassword/VerifyResetPasswordByClickingOnButtonInEmail,Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:36:18,47.006s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:35:31,0.001s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:35:31,0.000s,PASSED
+"callTestCase(findTestCase(""POPS App/CommonTestCases/OpenForgotPasswordPage""), [:], STOP_ON_FAILURE)",Chrome 89.0.4389.90,,,2021-03-29 09:35:31,2021-03-29 09:35:40,8.670s,PASSED
+"sendKeys(findTestObject(""POPS App UI/ForgotPassword_QuenMatKhau/input_Email""), EMAIL_TO_RESET_PASSWORD_BY_BUTTON + ""@mailinator.com"")",Chrome 89.0.4389.90,,,2021-03-29 09:35:40,2021-03-29 09:35:40,0.303s,PASSED
+"click(findTestObject(""POPS App UI/ForgotPassword_QuenMatKhau/button_Send""))",Chrome 89.0.4389.90,,,2021-03-29 09:35:40,2021-03-29 09:35:40,0.277s,PASSED
+"verifyElementVisible(findTestObject(""POPS App UI/ToastMessage/ToastMessage_Sucessfull""))",Chrome 89.0.4389.90,,,2021-03-29 09:35:40,2021-03-29 09:35:41,0.950s,PASSED
+"verifyElementText(findTestObject(""POPS App UI/ToastMessage/ToastMessage_Content""), ""Một email đã được gửi đến tài khoản email của bạn! Vui lòng kiểm tra email"")",Chrome 89.0.4389.90,,,2021-03-29 09:35:41,2021-03-29 09:35:42,0.250s,PASSED
+"commonActions.Mailinator.OpenMailinatorMail(EMAIL_TO_RESET_PASSWORD_BY_BUTTON, ""Thay đổi mật khẩu tài khoản POPS"")",Chrome 89.0.4389.90,,,2021-03-29 09:35:42,2021-03-29 09:36:18,36.418s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:36:18,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:36:18,0.000s,PASSED
+,,,,,,,
+Test Cases/VideoPlayer/VerifyNextVideoByClickingButton,Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:37:13,55.052s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:36:18,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:36:18,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:36:18,2021-03-29 09:36:23,4.578s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-29 09:36:23,2021-03-29 09:36:24,1.127s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:36:24,2021-03-29 09:36:25,1.305s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:36:25,2021-03-29 09:36:27,1.544s,PASSED
+"commonActions.SearchActions.searchAnyVideo(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), ""conan"")",Chrome 89.0.4389.90,,,2021-03-29 09:36:27,2021-03-29 09:36:31,3.836s,PASSED
+"waitForElementPresent(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 1)",Chrome 89.0.4389.90,,,2021-03-29 09:36:31,2021-03-29 09:36:31,0.243s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 0)",Chrome 89.0.4389.90,,,2021-03-29 09:36:31,2021-03-29 09:36:31,0.277s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/LIST_TITLE_RESULT""), 0)",Chrome 89.0.4389.90,,,2021-03-29 09:36:31,2021-03-29 09:36:32,1.038s,PASSED
+"commonActions.VideoPlayer.nextVideoByClicking(findTestObject(""Object Repository/VideoDetailPageUI/video_frame""))",Chrome 89.0.4389.90,,,2021-03-29 09:36:32,2021-03-29 09:37:13,40.960s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:37:13,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:37:13,0.001s,PASSED
+,,,,,,,
+Test Cases/VideoPlayer/VerifyVideoCanPlay,Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:38:13,59.492s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:37:13,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:37:13,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:37:13,2021-03-29 09:37:16,3.106s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-29 09:37:16,2021-03-29 09:37:18,2.012s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:37:18,2021-03-29 09:37:20,1.216s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:37:20,2021-03-29 09:37:21,1.283s,PASSED
+"commonActions.SearchActions.searchAnyVideo(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), ""conan"")",Chrome 89.0.4389.90,,,2021-03-29 09:37:21,2021-03-29 09:37:24,3.312s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 0)",Chrome 89.0.4389.90,,,2021-03-29 09:37:24,2021-03-29 09:37:24,0.281s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/LIST_TITLE_RESULT""), 0)",Chrome 89.0.4389.90,,,2021-03-29 09:37:24,2021-03-29 09:37:26,1.041s,PASSED
+commonActions.VideoPlayer.verifyPlayer(25),Chrome 89.0.4389.90,,,2021-03-29 09:37:26,2021-03-29 09:38:12,46.415s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:38:12,2021-03-29 09:38:13,0.672s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:38:13,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:38:13,0.001s,PASSED
+,,,,,,,
+Test Cases/UnlockComic/VerifyUnlockComic,Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:39:07,54.885s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:38:13,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:38:13,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:38:13,2021-03-29 09:38:17,4.431s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:38:17,2021-03-29 09:38:17,0.123s,PASSED
+"commonActions.SignInActions.SignInWithValidAccount(""huy.thanh@pops.vn"", ""12345678"")",Chrome 89.0.4389.90,,,2021-03-29 09:38:17,2021-03-29 09:38:27,9.708s,PASSED
+"commonActions.SearchActions.searchAnyComic(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), APICMS.getComicNameCanUnlock())",Chrome 89.0.4389.90,,,2021-03-29 09:38:27,2021-03-29 09:39:07,40.494s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:07,2021-03-29 09:39:07,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:07,2021-03-29 09:39:07,0.000s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchData,Chrome 89.0.4389.90,,,2021-03-29 09:39:07,2021-03-29 09:39:16,8.966s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:07,2021-03-29 09:39:07,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:07,2021-03-29 09:39:07,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:39:08,2021-03-29 09:39:11,3.123s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:11,2021-03-29 09:39:13,2.315s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:13,2021-03-29 09:39:14,1.337s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:14,2021-03-29 09:39:16,1.422s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:16,0.636s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:16,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:16,0.001s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchSugguest,Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:24,7.592s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:16,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:16,2021-03-29 09:39:16,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:39:17,2021-03-29 09:39:19,2.497s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:19,2021-03-29 09:39:21,2.067s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:21,2021-03-29 09:39:22,1.229s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:22,2021-03-29 09:39:23,1.035s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:39:23,2021-03-29 09:39:24,0.652s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:24,0.001s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:24,0.000s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyClickingOnGenre,Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:33,8.586s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:24,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:24,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:39:24,2021-03-29 09:39:27,2.425s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:39:27,2021-03-29 09:39:27,0.113s,PASSED
+"commonActions.ClickableActions.clickingOnGenre(findTestObject(""Object Repository/VideoDetailPageUI/TEXT_LINK_GENER""))",Chrome 89.0.4389.90,,,2021-03-29 09:39:27,2021-03-29 09:39:32,5.274s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:39:32,2021-03-29 09:39:33,0.647s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:39:33,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:39:33,0.001s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyRankingcheckOnComicPage,Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:40:03,30.054s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:39:33,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:39:33,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:39:33,2021-03-29 09:39:37,4.448s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:39:37,2021-03-29 09:39:37,0.112s,PASSED
+commonActions.PageActions.openComicPage(),Chrome 89.0.4389.90,,,2021-03-29 09:39:37,2021-03-29 09:39:39,1.865s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:39:39,2021-03-29 09:40:02,23.258s,PASSED
+"commonActions.Comics.CheckComicRankingDisplay20Items(findTestObject(""ComicPageUI/COMIC_RANKING_SECTION""))",Chrome 89.0.4389.90,,,2021-03-29 09:40:02,2021-03-29 09:40:03,0.246s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:03,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:03,0.001s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyClickOnAddToMyList,Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:36,33.812s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:03,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:03,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:40:03,2021-03-29 09:40:06,3.086s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:40:06,2021-03-29 09:40:06,0.120s,PASSED
+commonActions.PageActions.openVideoPage(),Chrome 89.0.4389.90,,,2021-03-29 09:40:06,2021-03-29 09:40:13,6.784s,PASSED
+commonActions.ClickableActions.addToMyList(),Chrome 89.0.4389.90,,,2021-03-29 09:40:13,2021-03-29 09:40:36,23.038s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:40:36,0.653s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:40:36,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:40:36,0.001s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyMyListShowValidData,Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:41:11,34.880s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:40:36,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:40:36,2021-03-29 09:40:36,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:40:37,2021-03-29 09:40:39,2.643s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:40:39,2021-03-29 09:40:39,0.126s,PASSED
+commonActions.PageActions.openVideoPage(),Chrome 89.0.4389.90,,,2021-03-29 09:40:39,2021-03-29 09:40:47,7.427s,PASSED
+commonActions.ClickableActions.addToMyList(),Chrome 89.0.4389.90,,,2021-03-29 09:40:47,2021-03-29 09:41:11,23.891s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:11,0.666s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:11,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:11,0.001s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyAlbumDisplayed,Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:31,19.769s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:11,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:11,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:41:11,2021-03-29 09:41:14,2.498s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:41:14,2021-03-29 09:41:14,0.115s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.90,,,2021-03-29 09:41:14,2021-03-29 09:41:14,0.181s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:41:14,2021-03-29 09:41:29,15.056s,PASSED
+"commonActions.PageActions.checkAlbumItemsCanClickable(findTestObject(""Object Repository/POPS App UI/HomePageUI/ALBUM_PART""))",Chrome 89.0.4389.90,,,2021-03-29 09:41:29,2021-03-29 09:41:30,0.636s,PASSED
+"commonActions.PageActions.checkBrokenImages(findTestObject(""Object Repository/CommonUI/IMG_THUMNAIL""), ""src"")",Chrome 89.0.4389.90,,,2021-03-29 09:41:30,2021-03-29 09:41:31,1.170s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:31,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:31,0.000s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyRecommandationDisplayed,Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:53,21.896s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:31,0.000s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:31,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-29 09:41:31,2021-03-29 09:41:34,3.127s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-29 09:41:34,2021-03-29 09:41:35,0.158s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.90,,,2021-03-29 09:41:35,2021-03-29 09:41:35,0.179s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-29 09:41:35,2021-03-29 09:41:49,14.716s,PASSED
+"commonActions.PageActions.checkRecommandation(findTestObject(""POPS App UI/HomePageUI/RECOMMANDATION_PART""))",Chrome 89.0.4389.90,,,2021-03-29 09:41:49,2021-03-29 09:41:51,1.308s,PASSED
+"commonActions.PageActions.checkReCommandationCanClickable(findTestObject(""POPS App UI/HomePageUI/RECOMMANDATION_PART""))",Chrome 89.0.4389.90,,,2021-03-29 09:41:51,2021-03-29 09:41:52,0.823s,PASSED
+"commonActions.PageActions.checkBrokenImages(findTestObject(""Object Repository/CommonUI/IMG_THUMNAIL""), ""src"")",Chrome 89.0.4389.90,,,2021-03-29 09:41:52,2021-03-29 09:41:53,1.447s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:53,2021-03-29 09:41:53,0.000s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-29 09:41:53,2021-03-29 09:41:53,0.000s,PASSED

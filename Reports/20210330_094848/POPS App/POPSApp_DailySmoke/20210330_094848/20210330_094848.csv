@@ -1,0 +1,117 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POPSApp_DailySmoke,Chrome 89.0.4389.90,,,2021-03-30 09:48:58,2021-03-30 09:53:38,4m - 40.812s,ERROR
+,,,,,,,
+Test Cases/VideoPlayer/VerifyNextVideoByClickingButton,Chrome 89.0.4389.90,,,2021-03-30 09:48:58,2021-03-30 09:49:15,17.010s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:48:58,2021-03-30 09:48:58,0.007s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:48:59,2021-03-30 09:49:04,5.274s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:49:04,2021-03-30 09:49:04,0.127s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:04,2021-03-30 09:49:06,1.992s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:06,2021-03-30 09:49:07,1.373s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:07,2021-03-30 09:49:09,1.723s,PASSED
+"commonActions.SearchActions.searchAnyVideo(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), ""conan"")",Chrome 89.0.4389.90,,,2021-03-30 09:49:09,2021-03-30 09:49:13,4.334s,PASSED
+"waitForElementPresent(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 1)",Chrome 89.0.4389.90,,,2021-03-30 09:49:13,2021-03-30 09:49:14,0.284s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:49:14,2021-03-30 09:49:14,0.305s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/LIST_TITLE_RESULT""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:49:14,2021-03-30 09:49:15,1.399s,ERROR
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:49:15,2021-03-30 09:49:15,0.001s,PASSED
+,,,,,,,
+Test Cases/VideoPlayer/VerifyVideoCanPlay,Chrome 89.0.4389.90,,,2021-03-30 09:49:15,2021-03-30 09:50:18,1m - 2.759s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:49:15,2021-03-30 09:49:15,0.001s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:49:16,2021-03-30 09:49:19,3.180s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:49:19,2021-03-30 09:49:19,0.120s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:19,2021-03-30 09:49:21,1.959s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:21,2021-03-30 09:49:22,1.365s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:49:22,2021-03-30 09:49:24,1.973s,PASSED
+"commonActions.SearchActions.searchAnyVideo(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), ""conan"")",Chrome 89.0.4389.90,,,2021-03-30 09:49:24,2021-03-30 09:49:28,3.810s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/RESULT_ELEMENTS""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:49:28,2021-03-30 09:49:28,0.282s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/LIST_TITLE_RESULT""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:49:28,2021-03-30 09:49:29,1.191s,PASSED
+commonActions.VideoPlayer.verifyPlayer(25),Chrome 89.0.4389.90,,,2021-03-30 09:49:29,2021-03-30 09:50:18,48.028s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:50:18,2021-03-30 09:50:18,0.669s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:18,2021-03-30 09:50:18,0.003s,PASSED
+,,,,,,,
+Test Cases/UnlockComic/VerifyUnlockComic,Chrome 89.0.4389.90,,,2021-03-30 09:50:18,2021-03-30 09:50:44,26.234s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:18,2021-03-30 09:50:18,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:50:18,2021-03-30 09:50:21,2.680s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:50:21,2021-03-30 09:50:21,0.193s,PASSED
+"commonActions.SignInActions.SignInWithValidAccount(""huy.thanh@pops.vn"", ""12345678"")",Chrome 89.0.4389.90,,,2021-03-30 09:50:21,2021-03-30 09:50:30,8.954s,PASSED
+"commonActions.SearchActions.searchAnyComic(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""), APICMS.getComicNameCanUnlock())",Chrome 89.0.4389.90,,,2021-03-30 09:50:30,2021-03-30 09:50:41,11.181s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""SearchPageUI/COMIC_RESULT_ITEMS""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:50:41,2021-03-30 09:50:42,0.295s,PASSED
+"click(findTestObject(""ComicPageUI/COMICDETAILPAGEUI/BUTTON_SORT""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:42,2021-03-30 09:50:43,1.264s,PASSED
+"commonActions.BaseActions.clickFirstElement(findTestObject(""ComicPageUI/COMICDETAILPAGEUI/BUTTON_STAR_ICON""), 0)",Chrome 89.0.4389.90,,,2021-03-30 09:50:43,2021-03-30 09:50:44,0.974s,PASSED
+"click(findTestObject(""ComicPageUI/COMICDETAILPAGEUI/BUTTON_BUY_NOW""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:44,2021-03-30 09:50:44,0.563s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:44,2021-03-30 09:50:44,0.000s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchData,Chrome 89.0.4389.90,,,2021-03-30 09:50:44,2021-03-30 09:50:53,8.461s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:44,2021-03-30 09:50:44,0.001s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:50:45,2021-03-30 09:50:48,3.206s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:50:48,2021-03-30 09:50:48,0.117s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:48,2021-03-30 09:50:50,2.003s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:50,2021-03-30 09:50:51,1.386s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:51,2021-03-30 09:50:52,0.984s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:50:52,2021-03-30 09:50:53,0.622s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:53,2021-03-30 09:50:53,0.002s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchSugguest,Chrome 89.0.4389.90,,,2021-03-30 09:50:53,2021-03-30 09:51:06,13.069s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:50:53,2021-03-30 09:50:53,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:50:53,2021-03-30 09:50:56,2.509s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:50:56,2021-03-30 09:50:56,0.113s,PASSED
+"click(findTestObject(""SearchPageUI/TEXTBOX_SEARCH""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:56,2021-03-30 09:50:58,2.154s,PASSED
+"commonActions.SearchActions.verifyComicSuggest(findTestObject(""SearchPageUI/COMIC_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:50:58,2021-03-30 09:51:04,6.084s,PASSED
+"commonActions.SearchActions.verifyVideoSuggest(findTestObject(""SearchPageUI/VIDEO_ITEMS""))",Chrome 89.0.4389.90,,,2021-03-30 09:51:04,2021-03-30 09:51:05,1.461s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:51:05,2021-03-30 09:51:06,0.632s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:06,2021-03-30 09:51:06,0.001s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyClickingOnGenre,Chrome 89.0.4389.90,,,2021-03-30 09:51:06,2021-03-30 09:51:16,9.663s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:06,2021-03-30 09:51:06,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:51:06,2021-03-30 09:51:09,2.487s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:51:09,2021-03-30 09:51:09,0.115s,PASSED
+"commonActions.ClickableActions.clickingOnGenre(findTestObject(""Object Repository/VideoDetailPageUI/TEXT_LINK_GENER""))",Chrome 89.0.4389.90,,,2021-03-30 09:51:09,2021-03-30 09:51:15,6.326s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:51:15,2021-03-30 09:51:16,0.614s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:16,2021-03-30 09:51:16,0.000s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyRankingcheckOnComicPage,Chrome 89.0.4389.90,,,2021-03-30 09:51:16,2021-03-30 09:51:45,28.974s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:16,2021-03-30 09:51:16,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:51:16,2021-03-30 09:51:18,2.490s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:51:18,2021-03-30 09:51:18,0.117s,PASSED
+commonActions.PageActions.openComicPage(),Chrome 89.0.4389.90,,,2021-03-30 09:51:18,2021-03-30 09:51:21,2.252s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-30 09:51:21,2021-03-30 09:51:44,23.730s,PASSED
+"commonActions.Comics.CheckComicRankingDisplay20Items(findTestObject(""ComicPageUI/COMIC_RANKING_SECTION""))",Chrome 89.0.4389.90,,,2021-03-30 09:51:44,2021-03-30 09:51:45,0.256s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:45,2021-03-30 09:51:45,0.000s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyClickOnAddToMyList,Chrome 89.0.4389.90,,,2021-03-30 09:51:45,2021-03-30 09:52:19,34.893s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:51:45,2021-03-30 09:51:45,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:51:45,2021-03-30 09:51:48,3.119s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:51:48,2021-03-30 09:51:48,0.119s,PASSED
+commonActions.PageActions.openVideoPage(),Chrome 89.0.4389.90,,,2021-03-30 09:51:48,2021-03-30 09:51:56,7.875s,PASSED
+commonActions.ClickableActions.addToMyList(),Chrome 89.0.4389.90,,,2021-03-30 09:51:56,2021-03-30 09:52:19,23.000s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:52:19,2021-03-30 09:52:19,0.653s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:52:19,2021-03-30 09:52:19,0.001s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyMyListShowValidData,Chrome 89.0.4389.90,,,2021-03-30 09:52:19,2021-03-30 09:52:56,36.541s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:52:19,2021-03-30 09:52:19,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:52:20,2021-03-30 09:52:22,2.641s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:52:22,2021-03-30 09:52:22,0.118s,PASSED
+commonActions.PageActions.openVideoPage(),Chrome 89.0.4389.90,,,2021-03-30 09:52:22,2021-03-30 09:52:30,8.077s,PASSED
+commonActions.ClickableActions.addToMyList(),Chrome 89.0.4389.90,,,2021-03-30 09:52:30,2021-03-30 09:52:55,24.862s,PASSED
+closeBrowser(),Chrome 89.0.4389.90,,,2021-03-30 09:52:55,2021-03-30 09:52:56,0.709s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:52:56,2021-03-30 09:52:56,0.000s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyAlbumDisplayed,Chrome 89.0.4389.90,,,2021-03-30 09:52:56,2021-03-30 09:53:16,20.188s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:52:56,2021-03-30 09:52:56,0.000s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:52:56,2021-03-30 09:52:59,2.734s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:52:59,2021-03-30 09:52:59,0.114s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.90,,,2021-03-30 09:52:59,2021-03-30 09:52:59,0.355s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-30 09:52:59,2021-03-30 09:53:14,14.807s,PASSED
+"commonActions.PageActions.checkAlbumItemsCanClickable(findTestObject(""Object Repository/POPS App UI/HomePageUI/ALBUM_PART""))",Chrome 89.0.4389.90,,,2021-03-30 09:53:14,2021-03-30 09:53:15,0.614s,PASSED
+"commonActions.PageActions.checkBrokenImages(findTestObject(""Object Repository/CommonUI/IMG_THUMNAIL""), ""src"")",Chrome 89.0.4389.90,,,2021-03-30 09:53:15,2021-03-30 09:53:16,1.437s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:53:16,2021-03-30 09:53:16,0.000s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyRecommandationDisplayed,Chrome 89.0.4389.90,,,2021-03-30 09:53:16,2021-03-30 09:53:38,22.133s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:53:16,2021-03-30 09:53:16,0.001s,PASSED
+openBrowser(SourceURL),Chrome 89.0.4389.90,,,2021-03-30 09:53:16,2021-03-30 09:53:19,3.080s,PASSED
+maximizeWindow(),Chrome 89.0.4389.90,,,2021-03-30 09:53:19,2021-03-30 09:53:20,0.120s,PASSED
+commonActions.APIs.anonymousLogin(),Chrome 89.0.4389.90,,,2021-03-30 09:53:20,2021-03-30 09:53:20,0.283s,PASSED
+commonActions.BaseActions.ScrollToFooter(),Chrome 89.0.4389.90,,,2021-03-30 09:53:20,2021-03-30 09:53:35,14.986s,PASSED
+"commonActions.PageActions.checkRecommandation(findTestObject(""POPS App UI/HomePageUI/RECOMMANDATION_PART""))",Chrome 89.0.4389.90,,,2021-03-30 09:53:35,2021-03-30 09:53:36,0.873s,PASSED
+"commonActions.PageActions.checkReCommandationCanClickable(findTestObject(""POPS App UI/HomePageUI/RECOMMANDATION_PART""))",Chrome 89.0.4389.90,,,2021-03-30 09:53:36,2021-03-30 09:53:37,1.356s,PASSED
+"commonActions.PageActions.checkBrokenImages(findTestObject(""Object Repository/CommonUI/IMG_THUMNAIL""), ""src"")",Chrome 89.0.4389.90,,,2021-03-30 09:53:37,2021-03-30 09:53:38,1.299s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 89.0.4389.90,,,2021-03-30 09:53:38,2021-03-30 09:53:38,0.001s,PASSED

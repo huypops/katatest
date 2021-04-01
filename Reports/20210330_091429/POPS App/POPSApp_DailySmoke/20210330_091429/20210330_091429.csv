@@ -1,0 +1,57 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+POPSApp_DailySmoke,,,,2021-03-30 09:14:41,2021-03-30 09:14:44,3.037s,FAILED
+,,,,,,,
+Test Cases/VideoPlayer/VerifyNextVideoByClickingButton,,,,2021-03-30 09:14:41,2021-03-30 09:14:42,0.678s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:41,2021-03-30 09:14:41,0.001s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.485s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.000s,PASSED
+,,,,,,,
+Test Cases/VideoPlayer/VerifyVideoCanPlay,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.181s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.002s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.013s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.001s,PASSED
+,,,,,,,
+Test Cases/UnlockComic/VerifyUnlockComic,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.164s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.001s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.009s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.002s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchData,,,,2021-03-30 09:14:42,2021-03-30 09:14:43,0.133s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:42,2021-03-30 09:14:42,0.001s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.015s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+,,,,,,,
+Test Cases/Search/VerifySearchSugguest,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.144s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.003s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyClickingOnGenre,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.142s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+,,,,,,,
+Test Cases/Clickable/VerifyRankingcheckOnComicPage,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.175s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.019s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyClickOnAddToMyList,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.156s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.016s,PASSED
+,,,,,,,
+Test Cases/AddToMyList/VerifyMyListShowValidData,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.140s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.015s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyAlbumDisplayed,,,,2021-03-30 09:14:43,2021-03-30 09:14:44,0.141s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:43,2021-03-30 09:14:43,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.000s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.000s,PASSED
+,,,,,,,
+Test Cases/Component/VerifyRecommandationDisplayed,,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.141s,FAILED
+Start listener action : sampleBeforeTestCase,,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.000s,PASSED
+openBrowser(SourceURL),,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.000s,FAILED
+Start listener action : sampleAfterTestCase,,,,2021-03-30 09:14:44,2021-03-30 09:14:44,0.000s,PASSED
