@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'commonActions.APICMS.cmsLogin'()
-CustomKeywords.'commonActions.APICMS.getComicIDListCanUnlock'()
+CustomKeywords.'commonActions.APICMS.getComicNameCanUnlock'()
 //CustomKeywords.'commonActions.APIs.anonymousLogin'()
 //CustomKeywords.'commonActions.APIs.getNumberItemInRecommandation'()
 //CustomKeywords.'commonActions.APIs.getUserToken'()

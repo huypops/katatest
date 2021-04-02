@@ -67,7 +67,7 @@ public class APICMS {
 
 	@Keyword
 	public static List<String> getComicIDListCanUnlock() {
-		List<String> comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.country==\'VN\')].id');
+		List<String> comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.country!=\'TH\' && @._isDeleted==false)].id');
 		println(comicnamelist)
 		return comicnamelist;
 	}
@@ -81,6 +81,7 @@ public class APICMS {
 			List<String> unlocklist = APIs.checkComicHasUnlockChapter(getComicIDListCanUnlock().get(i));
 			if(unlocklist.size()>0){
 				COMIC_ID=getComicIDListCanUnlock().get(i);
+				System.out.println("IIIIIIIIIDDDDDD   :   " + COMIC_ID);
 				return getComicIDListCanUnlock().get(i);
 			}
 		}
@@ -91,6 +92,7 @@ public class APICMS {
 	public static String getComicNameCanUnlock() {
 		String coid=isComicPurchase();
 		String comicnamelist = JsonPath.parse(getComicListCanPurchase()).read('$.data..[?(@.id==\''+coid+'\')].title');
+
 		System.out.println("Comic can unlock is  : " + comicnamelist.replace("[\"", "").replace("\"]", ""));
 		return comicnamelist.replace("[\"", "").replace("\"]", "");
 	}
@@ -104,23 +106,15 @@ public class APICMS {
 	}
 
 	private static void shuffleList(List list) {
-		/*list size*/
+
 		int listSize = list.size();
 
-		/*Initialize random number generator*/
 		Random random = new Random();
 		for (int i = 0; i < listSize; i++) {
-
-			/*Get element from list at index i*/
 			int currentElement = list[i];
-
-			/*Generate a random index number within the list size range*/
 			int randomIndex = i + random.nextInt(listSize - i);
-
-			/*set/replace the element at current index with the element of random index*/
 			list.set(i, list.get(randomIndex));
 
-			/*set/replace the element at random index with the element at current index*/
 			list.set(randomIndex, currentElement);
 		}
 	}

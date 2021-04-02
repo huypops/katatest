@@ -34,20 +34,18 @@ public class Comics {
 		List<WebElement> listOfComicRankingItems=	WebUiCommonHelper.findWebElements(object, 5)
 		Assert.assertEquals(listOfComicRankingItems.size(),20)
 	}
-	
+
 	@Keyword
 	def checkUnlockChapterVisible(TestObject object) {
-		Boolean isDisplayed = false		
+		Boolean isDisplayed = false
 		List<WebElement> listOfComicRankingItems=	WebUiCommonHelper.findWebElements(object, 5)
-			if (listOfComicRankingItems.size()==0) {
-				while (isDisplayed== false) {
-					BaseActions.ScrollToFooter();
-					BaseActions.ClickByJS(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_LOAD_MORE'), 3)
-					isDisplayed=WebUI.verifyElementVisible(object, FailureHandling.OPTIONAL);
-					break;
-				}
-					
-								
+		if (listOfComicRankingItems.size()==0) {
+			while (isDisplayed== false) {
+				BaseActions.ScrollToFooter();
+				BaseActions.ClickByJS(findTestObject('ComicPageUI/COMICDETAILPAGEUI/BUTTON_LOAD_MORE'), 3)
+				isDisplayed=WebUI.verifyElementVisible(object, FailureHandling.OPTIONAL);
+				break;
 			}
+		}
 	}
 }
