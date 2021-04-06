@@ -43,7 +43,7 @@ public class BaseActions {
 		while (isDisplayed== false) {
 			ScrollByHeight()
 			WebUI.delay(2)
-			isDisplayed=WebUI.verifyElementPresent(POPS_Logo_Footer, 1, FailureHandling.OPTIONAL)
+			isDisplayed=WebUI.verifyElementInViewport(POPS_Logo_Footer, 1, FailureHandling.OPTIONAL)
 		}
 		String a =""
 	}
