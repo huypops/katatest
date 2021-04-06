@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>f3b32675-89aa-43c4-b253-eaedf444975a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/POPS App/UI_Check/VN/VerifyNoBrokenImageOnAnimePage</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>6af55a84-ab0e-412d-a251-2741cd012d12</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/AddToMyList/VerifyClickOnAddToMyList</testCaseId>
    </testCaseLink>
    <testCaseLink>
